@@ -67,21 +67,6 @@ body {
   text-align: center;
 }
 
-#navMain h1 button {
-  padding: 0.25rem 0.75rem;
-  font-size: 1.25rem;
-  line-height: 1;
-  background-color: transparent;
-  border: 1px solid transparent;
-  border-radius: 0.25rem;
-  border-color: rgba(255, 255, 255, 0.1);
-}
-
-#navMain h1 .navbar-toggler:focus,
-#navMain h1 .navbar-toggler:hover {
-  text-decoration: none;
-}
-
 #navMain div {
   margin-left: auto;
   display: -webkit-box;
@@ -121,6 +106,7 @@ article {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
+  overflow: auto;
 }
 
 #cardpro * {
@@ -148,11 +134,10 @@ article {
 }
 
 footer {
-  bottom: 0px;
   padding: 5px;
-  /*height: calc(100vh - 100px);
-  bottom: 0px;*/
-  margin-top: auto;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -160,7 +145,6 @@ footer {
       -ms-flex-pack: justify;
           justify-content: space-between;
   background-color: #42387e;
-  margin-top: auto;
 }
 
 footer * {
@@ -176,5 +160,15 @@ footer h3 a:visited {
 
 footer h3 a:hover {
   color: #d8a0d1;
+}
+
+button {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  border-color: rgba(180, 115, 115, 0.952);
 }
 /*# sourceMappingURL=style.css.map */
