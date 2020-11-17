@@ -1,0 +1,180 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
+body {
+  background: -webkit-gradient(linear, right top, left top, from(#7f00ff), to(#e100ff));
+  background: linear-gradient(270deg, #7f00ff, #e100ff);
+  background-size: 400% 400%;
+  -webkit-animation: AnimationName 9s ease infinite;
+  animation: AnimationName 9s ease infinite;
+}
+
+.css-selector {
+  background: -webkit-gradient(linear, right top, left top, from(#663f24), to(#009058));
+  background: linear-gradient(270deg, #663f24, #009058);
+}
+
+@-webkit-keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+@keyframes AnimationName {
+  0% {
+    background-position: 0% 50%;
+  }
+  50% {
+    background-position: 100% 50%;
+  }
+  100% {
+    background-position: 0% 50%;
+  }
+}
+
+* {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0px;
+  padding: 0px;
+  font-family: "Cairo", sans-serif;
+  color: white;
+}
+
+* a:hover {
+  color: #d8a0d1;
+}
+
+#navMain {
+  padding-left: 5px;
+  padding-right: 5px;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  background-color: #42387e;
+}
+
+#navMain h1 {
+  margin-top: auto;
+  margin-bottom: auto;
+  text-align: center;
+}
+
+#navMain h1 button {
+  padding: 0.25rem 0.75rem;
+  font-size: 1.25rem;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  border-color: rgba(255, 255, 255, 0.1);
+}
+
+#navMain h1 .navbar-toggler:focus,
+#navMain h1 .navbar-toggler:hover {
+  text-decoration: none;
+}
+
+#navMain div {
+  margin-left: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#navMain div ul {
+  margin-top: auto;
+  margin-bottom: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+}
+
+#navMain div ul * {
+  text-decoration: none;
+  font-size: 20px;
+  margin: 5px;
+}
+
+article {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#cardpro {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#cardpro * {
+  padding: 5px;
+}
+
+#cardpro img {
+  width: 80%;
+  border-radius: 50%;
+}
+
+#cardpro ul {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  padding: 5px;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+#cardpro ul * {
+  text-decoration: none;
+}
+
+footer {
+  bottom: 0px;
+  padding: 5px;
+  /*height: calc(100vh - 100px);
+  bottom: 0px;*/
+  margin-top: auto;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  background-color: #42387e;
+  margin-top: auto;
+}
+
+footer * {
+  text-align: center;
+  bottom: 0px;
+}
+
+footer h3 a:link,
+footer h3 a:visited {
+  color: white;
+  background-color: black;
+}
+
+footer h3 a:hover {
+  color: #d8a0d1;
+}
+/*# sourceMappingURL=style.css.map */
