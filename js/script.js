@@ -84,14 +84,12 @@ function fooTogglerClick() {
     fooCard.forEach((element) => {
       element.style.display = "inline";
     });
-
-    fooToggler.classList.replace("fa-arrow-circle-down", "fa-arrow-circle-up");
+    fooToggler.classList.replace("fa-arrow-circle-up", "fa-arrow-circle-down");
   } else {
     fooCard.forEach((element) => {
       element.style.display = "none";
     });
-
-    fooToggler.classList.replace("fa-arrow-circle-up", "fa-arrow-circle-down");
+    fooToggler.classList.replace("fa-arrow-circle-down", "fa-arrow-circle-up");
   }
 }
 
@@ -99,4 +97,8 @@ a.forEach((element) => {
   if (element.href != window.location.href + "#") {
     element.target = "blank";
   }
+});
+
+jQuery(document).ready(function () {
+  body.style.marginBottom = footer.scrollHeight + "px";
 });
