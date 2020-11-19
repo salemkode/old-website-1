@@ -66,7 +66,6 @@ function onResizeEvent() {
       element.style.display = "none";
     });
   }
-  body.style.marginBottom = footer.scrollHeight + "px";
 
 }
 
@@ -99,6 +98,6 @@ a.forEach((element) => {
   }
 });
 
-jQuery(document).ready(function () {
+window.onload = function () { 
   body.style.marginBottom = footer.scrollHeight + "px";
-});
+ }

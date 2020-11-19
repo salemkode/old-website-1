@@ -1,41 +1,4 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo:wght@600&display=swap");
-body {
-  background: -webkit-gradient(linear, right top, left top, from(#7f00ff), to(#e100ff));
-  background: linear-gradient(270deg, #7f00ff, #e100ff);
-  background-size: 400% 400%;
-  -webkit-animation: AnimationName 9s ease infinite;
-  animation: AnimationName 9s ease infinite;
-}
-
-.css-selector {
-  background: -webkit-gradient(linear, right top, left top, from(#663f24), to(#009058));
-  background: linear-gradient(270deg, #663f24, #009058);
-}
-
-@-webkit-keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
-@keyframes AnimationName {
-  0% {
-    background-position: 0% 50%;
-  }
-  50% {
-    background-position: 100% 50%;
-  }
-  100% {
-    background-position: 0% 50%;
-  }
-}
-
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -47,6 +10,10 @@ body {
 
 * a:hover {
   color: #d8a0d1;
+}
+
+body {
+  background-color: #2a273a;
 }
 
 button {
@@ -65,10 +32,6 @@ article {
   display: flex;
 }
 
-P {
-  text-align: center;
-}
-
 footer {
   padding: 5px;
   position: fixed;
@@ -80,7 +43,7 @@ footer {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  background-color: #42387e;
+  background-color: #3b3653;
 }
 
 footer * {
@@ -107,7 +70,7 @@ footer h3 a:hover {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  background-color: #42387e;
+  background-color: #3b3653;
 }
 
 #navMain h1 {
@@ -174,5 +137,9 @@ footer h3 a:hover {
 
 #cardpro ul * {
   text-decoration: none;
+}
+
+#next_pro {
+  text-align: center;
 }
 /*# sourceMappingURL=style.css.map */
