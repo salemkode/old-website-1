@@ -1,0 +1,265 @@
+@import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+* {
+  padding: 0px;
+  margin: 0px;
+  font-family: 'Cairo', sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  overflow-x: hidden;
+  overflow-y: auto;
+}
+
+html *,
+body * {
+  padding: 0px;
+  margin: 0px;
+}
+
+a {
+  text-decoration: none;
+}
+
+h1 {
+  font-size: 1.3em;
+  color: #d9dee4;
+  margin: 0px 3px;
+}
+
+header {
+  background-color: #1d3557;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0px 5px;
+}
+
+header nav {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+header nav ul {
+  margin: auto 0px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+}
+
+header nav ul li {
+  margin: 0px 5px;
+  padding: 3px;
+}
+
+header nav ul li a {
+  color: #acb4c1;
+}
+
+#tap1 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 5px;
+}
+
+#tap1 #left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  text-align: left;
+}
+
+#tap1 #left > div {
+  margin: auto 10px;
+}
+
+#tap1 #right {
+  width: 50%;
+  text-align: right;
+}
+
+#tap1 #right img {
+  width: 70%;
+  border-radius: 50% 0 0 50%;
+}
+
+#bu {
+  margin: auto 0px;
+  padding: 4px;
+  color: #233a5b;
+  background-color: #eaedf1;
+  border-radius: 5px;
+  font-size: 0.7em;
+}
+
+#bu i {
+  margin: 2px;
+}
+
+#tap2 > h2 {
+  text-align: center;
+}
+
+#tap2 #card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+#tap2 #card-holder > * {
+  width: 50%;
+  text-align: center;
+  border: #453058 1px solid;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 10px;
+  background: url("../res/bac.jpg") center;
+  background-origin: border-box;
+}
+
+#tap2 #card-holder > * h4 {
+  color: #ffffff;
+}
+
+#tap2 #card-holder > * p {
+  font-size: 12px;
+  color: #ffffff;
+}
+
+#tap2 #card-holder #card2 {
+  background-image: url("../res/bac2.jpg");
+}
+
+#tap3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+#tap3 h3 {
+  text-align: center;
+}
+
+#tap3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: auto;
+}
+
+#tap3 ul li {
+  margin: 10px;
+  color: 1d3557;
+}
+
+/*
+#test {
+  .bar-holder {
+    width: 95%;
+    background-color: rgb(231, 231, 231);
+    border-radius: 20px;
+    margin: 0 auto;
+  }
+
+  .bar-1 {
+    width: 40%;
+    background-color: rgb(226, 226, 69);
+    color: rgb(0, 0, 0);
+    border-radius: 20px;
+    text-align: center;
+    margin-top: 2px;
+    font-weight: 400;
+  }
+}*/
+@media (max-width: 450px) {
+  header {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  header h1 {
+    text-align: center;
+  }
+  header nav ul {
+    width: 100%;
+  }
+  header nav ul li {
+    width: 33.3%;
+    text-align: center;
+  }
+  #bu {
+    display: none;
+  }
+  #tap1 {
+    text-align: center;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  #tap1 #right {
+    width: 100%;
+    text-align: center;
+  }
+  #tap1 #right img {
+    width: 70%;
+    border-radius: 50%;
+  }
+  #tap1 #left {
+    width: 100%;
+    padding: 10px;
+    padding-right: 0px;
+  }
+  #tap2 {
+    margin: 0;
+    padding: 0px;
+  }
+  #tap2 #card-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+  }
+  #tap2 #card-holder > * {
+    margin: 0 auto 10px;
+    width: calc(100% - 20px);
+    font-size: 20px;
+  }
+  #tap2 #card-holder > * p {
+    padding: 20px 0;
+  }
+}
+/*# sourceMappingURL=style.css.map */

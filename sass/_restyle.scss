@@ -1,0 +1,65 @@
+@media (max-width: 450px) {
+  header {
+    flex-direction: column;
+    h1 {
+      text-align: center;
+    }
+    nav {
+      ul {
+        width: 100%;
+        li {
+          width: 33.3%;
+          text-align: center;
+        }
+      }
+    }
+  }
+
+  #bu {
+    display: none;
+  }
+
+  #tap1 {
+    text-align: center;
+    flex-direction: column;
+    #right {
+      width: 100%;
+      text-align: center;
+      img {
+        width: 70%;
+        border-radius: 50%;
+      }
+    }
+    #left {
+      width: 100%;
+      padding: 10px;
+      padding-right: 0px; 
+    }
+  }
+
+  #tap2 {
+    margin: 0;
+    padding: 0px;
+
+    #card-holder {
+      display: flex;
+      flex-direction: column;
+      margin: 0px;
+      padding: 0px;
+      width: 100%;
+      margin: 0;
+      padding: 0px;
+      text-align: center;
+
+      > * {
+        margin: 0 auto 10px;
+        width: calc(100% - 20px);
+        font-size: 20px;
+        p{
+          padding: 20px 0;
+        }
+      }
+      
+    }
+  }
+}
