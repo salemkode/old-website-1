@@ -44,8 +44,10 @@ header {
   #right {
     width: 50%;
     text-align: right;
+    display: flex;
     img {
-      width: 70%;
+      margin: auto 0;
+      width: 100%;
       border-radius: 50% 0 0 50%;
     }
   }
@@ -79,6 +81,7 @@ header {
       margin: 5px;
       border-radius: 10px;
       background: url("../res/bac.jpg") center;
+      background-size: cover;
       background-origin: border-box;
       background-repeat: no-repeat;
       h4 {
@@ -91,7 +94,7 @@ header {
       }
     }
     #card2 {
-      background-image: url("../res/bac2.jpg");
+      background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
       background-origin: border-box;
     }
   }
@@ -109,6 +112,7 @@ header {
     list-style: none;
     margin: auto;
     li{
+      font-size: calc(100% /32% );
       margin: 10px;
       color: 1d3557;
     }

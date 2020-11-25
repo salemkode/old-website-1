@@ -93,10 +93,14 @@ header nav ul li a {
 #tap1 #right {
   width: 50%;
   text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
 #tap1 #right img {
-  width: 70%;
+  margin: auto 0;
+  width: 100%;
   border-radius: 50% 0 0 50%;
 }
 
@@ -132,6 +136,7 @@ header nav ul li a {
   margin: 5px;
   border-radius: 10px;
   background: url("../res/bac.jpg") center;
+  background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
 }
@@ -147,7 +152,7 @@ header nav ul li a {
 }
 
 #tap2 #card-holder #card2 {
-  background-image: url("../res/bac2.jpg");
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
   background-origin: border-box;
 }
 
@@ -178,6 +183,7 @@ header nav ul li a {
 }
 
 #tap3 ul li {
+  font-size: calc(100% /32%);
   margin: 10px;
   color: 1d3557;
 }
@@ -201,7 +207,10 @@ header nav ul li a {
     font-weight: 400;
   }
 }*/
-@media (max-width: 450px) {
+@media (max-width: 716px) {
+  * {
+    font-size: 1em;
+  }
   header {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
@@ -210,6 +219,12 @@ header nav ul li a {
   }
   header h1 {
     text-align: center;
+  }
+  header nav {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
   }
   header nav ul {
     width: 100%;
@@ -231,15 +246,22 @@ header nav ul li a {
   #tap1 #right {
     width: 100%;
     text-align: center;
+    margin: 0 auto;
   }
   #tap1 #right img {
-    width: 70%;
+    margin: auto;
+    width: 80%;
     border-radius: 50%;
   }
   #tap1 #left {
     width: 100%;
     padding: 10px;
     padding-right: 0px;
+    text-align: left;
+  }
+  #tap1 #left * {
+    width: 100%;
+    font-size: 0.9em;
   }
   #tap2 {
     margin: 0;
@@ -266,7 +288,14 @@ header nav ul li a {
     font-size: 20px;
   }
   #tap2 #card-holder > * p {
-    padding: 20px 0;
+    padding: 5px 0;
+    font-size: 1em;
+  }
+  #tap3 ul {
+    overflow: auto;
+  }
+  #tap3 ul li {
+    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
