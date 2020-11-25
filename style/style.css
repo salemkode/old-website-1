@@ -3,6 +3,7 @@
   padding: 0px;
   margin: 0px;
   font-family: 'Cairo', sans-serif;
+  font-size: 1em;
 }
 
 html,
@@ -24,9 +25,9 @@ a {
 }
 
 h1 {
-  font-size: 1.3em;
+  font-size: 2.6em;
   color: #d9dee4;
-  margin: 0px 3px;
+  margin: 0px 6px;
 }
 
 header {
@@ -37,7 +38,7 @@ header {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0px 5px;
+  padding: 0px 10px;
 }
 
 header nav {
@@ -59,12 +60,13 @@ header nav ul {
 }
 
 header nav ul li {
-  margin: 0px 5px;
-  padding: 3px;
+  margin: 0px 10px;
+  padding: 6px;
 }
 
 header nav ul li a {
-  color: #acb4c1;
+  color: #c6c7ca;
+  font-size: 1.5em;
 }
 
 #tap1 {
@@ -72,7 +74,7 @@ header nav ul li a {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin-top: 5px;
+  margin-top: 10px;
 }
 
 #tap1 #left {
@@ -81,10 +83,11 @@ header nav ul li a {
   display: -ms-flexbox;
   display: flex;
   text-align: left;
+  font-size: 2em;
 }
 
 #tap1 #left > div {
-  margin: auto 10px;
+  margin: auto 20px;
 }
 
 #tap1 #right {
@@ -99,19 +102,20 @@ header nav ul li a {
 
 #bu {
   margin: auto 0px;
-  padding: 4px;
+  padding: 8px;
   color: #233a5b;
   background-color: #eaedf1;
   border-radius: 5px;
-  font-size: 0.7em;
+  font-size: 1.14em;
 }
 
 #bu i {
-  margin: 2px;
+  margin: 4px;
 }
 
 #tap2 > h2 {
   text-align: center;
+  font-size: 2em;
 }
 
 #tap2 #card-holder {
@@ -129,19 +133,22 @@ header nav ul li a {
   border-radius: 10px;
   background: url("../res/bac.jpg") center;
   background-origin: border-box;
+  background-repeat: no-repeat;
 }
 
 #tap2 #card-holder > * h4 {
+  font-size: 2em;
   color: #ffffff;
 }
 
 #tap2 #card-holder > * p {
-  font-size: 12px;
+  font-size: 20px;
   color: #ffffff;
 }
 
 #tap2 #card-holder #card2 {
   background-image: url("../res/bac2.jpg");
+  background-origin: border-box;
 }
 
 #tap3 {

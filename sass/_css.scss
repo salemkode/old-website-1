@@ -1,13 +1,13 @@
 h1 {
-  font-size: 1.3em;
+  font-size: 2.6em;
   color: #d9dee4;
-  margin: 0px 3px;
+  margin: 0px 6px;
 }
 header {
   background-color: #1d3557;
   display: flex;
   justify-content: space-between;
-  padding: 0px 5px;
+  padding: 0px 10px;
   nav {
     display: flex;
     ul {
@@ -16,10 +16,11 @@ header {
       flex-direction: row;
       list-style: none;
       li {
-        margin: 0px 5px;
-        padding: 3px;
+        margin: 0px 10px;
+        padding: 6px;
         a {
-          color: #acb4c1;
+          color: #c6c7ca;
+          font-size: 1.5em;
         }
       }
     }
@@ -28,14 +29,15 @@ header {
 #tap1 {
   text-align: center;
   display: flex;
-  margin-top: 5px;
+  margin-top: 10px;
 
   #left {
     width: 50%;
     display: flex;
     text-align: left;
+    font-size: 2em;
     > div {
-      margin: auto 10px;
+      margin: auto 20px;
     }
   }
 
@@ -51,19 +53,20 @@ header {
 
 #bu {
   margin: auto 0px;
-  padding: 4px;
+  padding: 8px;
   color: #233a5b;
   background-color: #eaedf1;
   border-radius: 5px;
-  font-size: 0.7em;
+  font-size: 1.14em;
   i {
-    margin: 2px;
+    margin: 4px;
   }
 }
 
 #tap2 {
   > h2 {
     text-align: center;
+    font-size: 2em;
   }
 
   #card-holder {
@@ -77,16 +80,19 @@ header {
       border-radius: 10px;
       background: url("../res/bac.jpg") center;
       background-origin: border-box;
+      background-repeat: no-repeat;
       h4 {
+        font-size: 2em;
         color: #ffffff;
       }
       p {
-        font-size: 12px;
+        font-size: 20px;
         color: #ffffff;
       }
     }
     #card2 {
       background-image: url("../res/bac2.jpg");
+      background-origin: border-box;
     }
   }
 }
