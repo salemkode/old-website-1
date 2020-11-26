@@ -6,78 +6,105 @@
     flex-direction: column;
     h1 {
       text-align: center;
+      display: flex;
+      span {
+        margin: auto;
+      }
+      #bu-nav {
+        display: none;
+        cursor: pointer;
+        margin: auto 0;
+        display: block;
+      }
     }
     nav {
       flex-direction: column;
       ul {
+        flex-direction: column;
         width: 100%;
         li {
-          width: 33.3%;
+          width: calc(100% -20px);
           text-align: center;
         }
       }
     }
+    #bu {
+      margin-bottom: 10px;
+    }
   }
 
-  #bu {
-    display: none;
-  }
-
-  #tap1 {
-    text-align: center;
-    flex-direction: column;
-    #right {
-      width: 100%;
+  article {
+    #tap1 {
       text-align: center;
-      margin: 0 auto;
-      img {
-        margin: auto;
-        width: 80%;
-        border-radius: 50%;
-      }
-    }
-    #left {
-      width: 100%;
-      padding: 10px;
-      padding-right: 0px;
-      text-align: left;
-      * {
-        width: 100%;
-        font-size: 0.9em;
-      }
-    }
-  }
-
-  #tap2 {
-    margin: 0;
-    padding: 0px;
-
-    #card-holder {
-      display: flex;
       flex-direction: column;
-      margin: 0px;
-      padding: 0px;
-      width: 100%;
-      margin: 0;
-      padding: 0px;
-      text-align: center;
-
-      > * {
-        margin: 0 auto 10px;
-        width: calc(100% - 20px);
-        font-size: 20px;
-        p {
-          padding: 5px 0;
-          font-size: 1em;
+      #right {
+        width: 100%;
+        text-align: center;
+        margin: 0 auto;
+        img {
+          margin: auto;
+          width: 80%;
+          border-radius: 50%;
+        }
+      }
+      #left {
+        width: 100%;
+        padding: 0px;
+        padding-right: 0px;
+        text-align: left;
+        h2 {
+          width: calc(100% - 30);
+          font-size: 0.7em;
+        }
+        #follow {
+          ul {
+            margin: 30px 0 0 0;
+            display: flex;
+            list-style: none;
+            justify-content: space-around;
+            a {
+              color: black;
+              font-size: 2.5em;
+            }
+            a:hover {
+              color: rgb(35, 89, 124);
+            }
+          }
         }
       }
     }
+
+    #tap3 {
+      ul {
+        overflow: auto;
+      }
+    }
   }
-  #tap3 {
-    ul {
-      overflow: auto;
-      li {
-        font-size: 10px;
+}
+@media (max-width: 1222px) {
+  article {
+    #tap2 {
+      margin: 0;
+      padding: 0px;
+
+      #card-holder {
+        display: flex;
+        flex-direction: column;
+        margin: 0px;
+        padding: 0px;
+        width: 100%;
+        margin: 0;
+        padding: 0px;
+        text-align: center;
+
+        > * {
+          margin: 10px auto;
+          width: calc(100% - 42px);
+          font-size: 20px;
+          p {
+            padding: 5px 0;
+          }
+        }
       }
     }
   }

@@ -24,12 +24,6 @@ a {
   text-decoration: none;
 }
 
-h1 {
-  font-size: 2.6em;
-  color: #d9dee4;
-  margin: 0px 6px;
-}
-
 header {
   background-color: #1d3557;
   display: -webkit-box;
@@ -39,6 +33,16 @@ header {
       -ms-flex-pack: justify;
           justify-content: space-between;
   padding: 0px 10px;
+}
+
+header h1 {
+  font-size: 2.6em;
+  color: #d9dee4;
+  margin: 0px 6px;
+}
+
+header h1 #bu-nav {
+  display: none;
 }
 
 header nav {
@@ -69,42 +73,12 @@ header nav ul li a {
   font-size: 1.5em;
 }
 
-#tap1 {
-  text-align: center;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  margin-top: 10px;
+header nav ul li a:hover {
+  color: white;
 }
 
-#tap1 #left {
-  width: 50%;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  text-align: left;
-  font-size: 2em;
-}
-
-#tap1 #left > div {
-  margin: auto 20px;
-}
-
-#tap1 #right {
-  width: 50%;
-  text-align: right;
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#tap1 #right img {
-  margin: auto 0;
-  width: 100%;
-  border-radius: 50% 0 0 50%;
-}
-
-#bu {
+header #bu {
+  cursor: pointer;
   margin: auto 0px;
   padding: 8px;
   color: #233a5b;
@@ -113,82 +87,12 @@ header nav ul li a {
   font-size: 1.14em;
 }
 
-#bu i {
+header #bu i {
   margin: 4px;
 }
 
-#tap2 > h2 {
-  text-align: center;
-  font-size: 2em;
-}
-
-#tap2 #card-holder {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-}
-
-#tap2 #card-holder > * {
-  width: 50%;
-  text-align: center;
-  border: #453058 1px solid;
-  padding: 6px;
-  margin: 5px;
-  border-radius: 10px;
-  background: url("../res/bac.jpg") center;
-  background-size: cover;
-  background-origin: border-box;
-  background-repeat: no-repeat;
-}
-
-#tap2 #card-holder > * h4 {
-  font-size: 2em;
-  color: #ffffff;
-}
-
-#tap2 #card-holder > * p {
-  font-size: 20px;
-  color: #ffffff;
-}
-
-#tap2 #card-holder #card2 {
-  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
-  background-origin: border-box;
-}
-
-#tap3 {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: vertical;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
-}
-
-#tap3 h3 {
-  text-align: center;
-}
-
-#tap3 ul {
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: flex;
-  -webkit-box-orient: horizontal;
-  -webkit-box-direction: normal;
-      -ms-flex-direction: row;
-          flex-direction: row;
-  list-style: none;
-  margin: auto;
-}
-
-#tap3 ul li {
-  font-size: calc(100% /32%);
-  margin: 10px;
-  color: 1d3557;
-}
-
-/*
+article {
+  /*
 #test {
   .bar-holder {
     width: 95%;
@@ -207,6 +111,181 @@ header nav ul li a {
     font-weight: 400;
   }
 }*/
+}
+
+article #tap1 {
+  text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin-top: 10px;
+}
+
+article #tap1 #left {
+  width: 50%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  text-align: left;
+  font-size: 2em;
+}
+
+article #tap1 #left > div {
+  margin: auto 30px;
+}
+
+article #tap1 #left #follow h3 {
+  text-align: center;
+}
+
+article #tap1 #left #follow ul {
+  margin: 30px 0 0 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  list-style: none;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+article #tap1 #left #follow ul a {
+  color: black;
+  font-size: 3em;
+}
+
+article #tap1 #left #follow ul a:hover {
+  color: #23597c;
+}
+
+article #tap1 #right {
+  width: 50%;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+article #tap1 #right img {
+  margin: auto 0;
+  width: 100%;
+  border-radius: 50% 0 0 50%;
+}
+
+article #tap2 > h2 {
+  text-align: center;
+  font-size: 2em;
+}
+
+article #tap2 #card-holder {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+article #tap2 #card-holder > * {
+  width: 50%;
+  text-align: center;
+  border: #453058 1px solid;
+  padding: 6px;
+  margin: 5px;
+  border-radius: 10px;
+  background: url("../res/bac.jpg") center;
+  background-size: cover;
+  background-origin: border-box;
+  background-repeat: no-repeat;
+}
+
+article #tap2 #card-holder > * h4 {
+  font-size: 5vh;
+  color: #ffffff;
+}
+
+article #tap2 #card-holder > * p {
+  font-size: 3vh;
+  color: #ffffff;
+}
+
+article #tap2 #card-holder #card2 {
+  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-origin: border-box;
+  background-position: top;
+}
+
+article #tap3 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+}
+
+article #tap3 h1 {
+  text-align: center;
+  font-size: 2em;
+}
+
+article #tap3 ul {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  list-style: none;
+  margin: auto;
+}
+
+article #tap3 ul li {
+  font-size: 2vw;
+  margin: 10px;
+  color: 1d3557;
+}
+
+article #tap3 li:nth-of-type(1) a:hover {
+  color: red;
+}
+
+article #tap3 li:nth-of-type(2) a:hover {
+  color: blue;
+}
+
+article #tap3 li:nth-of-type(3) a:hover {
+  color: orange;
+}
+
+article #tap3 li:nth-of-type(4) a:hover {
+  color: red;
+}
+
+article #tap3 li:nth-of-type(5) a:hover {
+  color: #3a3aad;
+}
+
+footer {
+  text-align: center;
+  background-color: #1d3557;
+}
+
+footer h3 {
+  color: white;
+  font-size: 1.5em;
+}
+
+footer h3 span::before {
+  content: " : ";
+}
+
 @media (max-width: 716px) {
   * {
     font-size: 1em;
@@ -219,6 +298,18 @@ header nav ul li a {
   }
   header h1 {
     text-align: center;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  header h1 span {
+    margin: auto;
+  }
+  header h1 #bu-nav {
+    display: none;
+    cursor: pointer;
+    margin: auto 0;
+    display: block;
   }
   header nav {
     -webkit-box-orient: vertical;
@@ -227,47 +318,73 @@ header nav ul li a {
             flex-direction: column;
   }
   header nav ul {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
     width: 100%;
   }
   header nav ul li {
-    width: 33.3%;
+    width: calc(100% -20px);
     text-align: center;
   }
-  #bu {
-    display: none;
+  header #bu {
+    margin-bottom: 10px;
   }
-  #tap1 {
+  article #tap1 {
     text-align: center;
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
   }
-  #tap1 #right {
+  article #tap1 #right {
     width: 100%;
     text-align: center;
     margin: 0 auto;
   }
-  #tap1 #right img {
+  article #tap1 #right img {
     margin: auto;
     width: 80%;
     border-radius: 50%;
   }
-  #tap1 #left {
+  article #tap1 #left {
     width: 100%;
-    padding: 10px;
+    padding: 0px;
     padding-right: 0px;
     text-align: left;
   }
-  #tap1 #left * {
-    width: 100%;
-    font-size: 0.9em;
+  article #tap1 #left h2 {
+    width: calc(100% - 30);
+    font-size: 0.7em;
   }
-  #tap2 {
+  article #tap1 #left #follow ul {
+    margin: 30px 0 0 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    list-style: none;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+  }
+  article #tap1 #left #follow ul a {
+    color: black;
+    font-size: 2.5em;
+  }
+  article #tap1 #left #follow ul a:hover {
+    color: #23597c;
+  }
+  article #tap3 ul {
+    overflow: auto;
+  }
+}
+
+@media (max-width: 1222px) {
+  article #tap2 {
     margin: 0;
     padding: 0px;
   }
-  #tap2 #card-holder {
+  article #tap2 #card-holder {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -282,20 +399,13 @@ header nav ul li a {
     padding: 0px;
     text-align: center;
   }
-  #tap2 #card-holder > * {
-    margin: 0 auto 10px;
-    width: calc(100% - 20px);
+  article #tap2 #card-holder > * {
+    margin: 10px auto;
+    width: calc(100% - 42px);
     font-size: 20px;
   }
-  #tap2 #card-holder > * p {
+  article #tap2 #card-holder > * p {
     padding: 5px 0;
-    font-size: 1em;
-  }
-  #tap3 ul {
-    overflow: auto;
-  }
-  #tap3 ul li {
-    font-size: 10px;
   }
 }
 /*# sourceMappingURL=style.css.map */
