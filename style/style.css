@@ -4,6 +4,10 @@
   margin: 0px;
   font-family: 'Cairo', sans-serif;
   font-size: 1em;
+  -webkit-transition-duration: 0.1s;
+          transition-duration: 0.1s;
+  -webkit-transition-property: inherit;
+  transition-property: inherit;
 }
 
 html,
@@ -78,6 +82,9 @@ header nav ul li a:hover {
 }
 
 header #bu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   cursor: pointer;
   margin: auto 0px;
   padding: 8px;
@@ -89,6 +96,10 @@ header #bu {
 
 header #bu i {
   margin: 4px;
+}
+
+header #bu span {
+  margin: auto;
 }
 
 article {
@@ -176,7 +187,6 @@ article #tap1 #right {
 article #tap1 #right img {
   margin: auto 0;
   width: 100%;
-  border-radius: 50% 0 0 50%;
 }
 
 article #tap2 > h2 {
@@ -214,7 +224,7 @@ article #tap2 #card-holder > * p {
 }
 
 article #tap2 #card-holder #card2 {
-  background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
+  background-image: url("../res/bac2.jpg");
   background-origin: border-box;
   background-position: top;
 }
@@ -252,23 +262,23 @@ article #tap3 ul li {
   color: 1d3557;
 }
 
-article #tap3 li:nth-of-type(1) a:hover {
+article #tap3 li:nth-of-type(1) a {
   color: red;
 }
 
-article #tap3 li:nth-of-type(2) a:hover {
-  color: blue;
+article #tap3 li:nth-of-type(2) a {
+  color: rgba(0, 0, 255, 0.815);
 }
 
-article #tap3 li:nth-of-type(3) a:hover {
+article #tap3 li:nth-of-type(3) a {
   color: orange;
 }
 
-article #tap3 li:nth-of-type(4) a:hover {
+article #tap3 li:nth-of-type(4) a {
   color: red;
 }
 
-article #tap3 li:nth-of-type(5) a:hover {
+article #tap3 li:nth-of-type(5) a {
   color: #3a3aad;
 }
 
@@ -284,6 +294,74 @@ footer h3 {
 
 footer h3 span::before {
   content: " : ";
+}
+
+#tw-h {
+  font-size: 2em;
+  text-align: center;
+}
+
+#twitter-list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+}
+
+#twitter-list > div .tw-1 {
+  display: block;
+  color: #000000;
+  background-position: bottom;
+  background-size: contain;
+  border-radius: 4px;
+  margin: 3px auto;
+  padding: 5px;
+}
+
+#twitter-list > div .tw-1 > div {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding-bottom: 5px;
+}
+
+#twitter-list > div .tw-1 > div h3 {
+  margin-left: auto;
+  font-size: 2em;
+}
+
+#twitter-list > div .tw-1 > div img {
+  width: 40px;
+  height: 40px;
+  margin: auto auto auto 0;
+  border-radius: 50%;
+}
+
+#twitter-list > div .tw-1 p {
+  text-align: center;
+}
+
+#out-tw {
+  width: 70%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  margin: 0 auto;
+}
+
+#out-tw p {
+  width: 100%;
+  text-align: center;
+}
+
+#out-tw i {
+  margin: auto 0;
 }
 
 @media (max-width: 716px) {
@@ -318,10 +396,13 @@ footer h3 span::before {
             flex-direction: column;
   }
   header nav ul {
-    -webkit-box-orient: vertical;
+    display: none;
+    -webkit-box-orient: horizontal;
     -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
     width: 100%;
   }
   header nav ul li {
@@ -330,13 +411,14 @@ footer h3 span::before {
   }
   header #bu {
     margin-bottom: 10px;
+    display: none;
   }
   article #tap1 {
     text-align: center;
     -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: column-reverse;
+            flex-direction: column-reverse;
   }
   article #tap1 #right {
     width: 100%;
@@ -346,7 +428,6 @@ footer h3 span::before {
   article #tap1 #right img {
     margin: auto;
     width: 80%;
-    border-radius: 50%;
   }
   article #tap1 #left {
     width: 100%;
@@ -377,9 +458,34 @@ footer h3 span::before {
   article #tap3 ul {
     overflow: auto;
   }
+  #twitter-list {
+    padding: 3px 0;
+    width: 100%;
+  }
+  #twitter-list .tw-1 {
+    border-radius: 8px;
+    width: 100%;
+    margin: 0px;
+    margin-bottom: 5px;
+    padding: 4px 10px 10px 10px;
+  }
+  #twitter-list .tw-1 p {
+    height: auto;
+    width: 100%;
+  }
+  #out-tw {
+    width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    margin: 0 auto;
+  }
+  #out-tw i {
+    margin: auto 0;
+  }
 }
 
-@media (max-width: 1222px) {
+@media (max-width: 965px) {
   article #tap2 {
     margin: 0;
     padding: 0px;
@@ -407,5 +513,33 @@ footer h3 span::before {
   article #tap2 #card-holder > * p {
     padding: 5px 0;
   }
+}
+
+@media (max-width: 894px) and (min-width: 716px) {
+  article #tap1 {
+    font-size: 10px;
+  }
+}
+
+@media (max-width: 495px) {
+  article #tap2 #card-holder > * p {
+    font-size: 15px;
+  }
+}
+
+.small {
+  font-size: small;
+}
+
+.text-center {
+  text-align: center;
+}
+
+.carousel-item-width {
+  width: 100%;
+}
+
+.mx-auto {
+  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */

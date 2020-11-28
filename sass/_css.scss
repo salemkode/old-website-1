@@ -36,6 +36,7 @@ header {
   }
 
   #bu {
+    display: flex;
     cursor: pointer;
     margin: auto 0px;
     padding: 8px;
@@ -45,6 +46,9 @@ header {
     font-size: 1.14em;
     i {
       margin: 4px;
+    }
+    span {
+      margin: auto;
     }
   }
 }
@@ -90,7 +94,6 @@ article {
       img {
         margin: auto 0;
         width: 100%;
-        border-radius: 50% 0 0 50%;
       }
     }
   }
@@ -124,7 +127,7 @@ article {
         }
       }
       #card2 {
-        background-image: url("https://images.unsplash.com/photo-1510915228340-29c85a43dcfe?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxzZWFyY2h8MzN8fGNvZGV8ZW58MHx8MHw%3D&auto=format&fit=crop&w=500&q=60");
+        background-image: url("../res/bac2.jpg");
         background-origin: border-box;
         background-position: top;
       }
@@ -150,10 +153,10 @@ article {
       }
     }
 
-    $sizes: "1" red, "2" blue, "3" orange, "4" rgb(255, 0, 0),
+    $sizes: "1" red, "2" rgba(0, 0, 255, 0.815), "3" orange, "4" rgb(255, 0, 0),
       "5" rgb(58, 58, 173);
     @each $index, $color in $sizes {
-      li:nth-of-type(#{$index}) a:hover {
+      li:nth-of-type(#{$index}) a {
         color: $color;
       }
     }
@@ -188,5 +191,55 @@ footer {
     span::before {
       content: " : ";
     }
+  }
+}
+#tw-h {
+  font-size: 2em;
+  text-align: center;
+}
+#twitter-list {
+  display: flex;
+  flex-direction: row;
+  > div {
+    .tw-1 {
+      display: block;
+      color: #000000;
+      background-position: bottom;
+      background-size: contain;
+      border-radius: 4px;
+      margin: 3px auto;
+      padding: 5px;
+
+      > div {
+        display: flex;
+        justify-content: space-between;
+        padding-bottom: 5px;
+        h3 {
+          margin-left: auto;
+          font-size: 2em;
+        }
+        img {
+          width: 40px;
+          height: 40px;
+          margin: auto auto auto 0;
+          border-radius: 50%;
+        }
+      }
+      p {
+        text-align: center;
+      }
+    }
+  }
+}
+#out-tw {
+  width: 70%;
+  display: flex;
+  margin: 0 auto;
+  p {
+    width: 100%;
+    text-align: center;
+  }
+  i {
+    margin: auto 0;
   }
 }
