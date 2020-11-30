@@ -8,12 +8,7 @@ let twP = document.querySelector("#tw-p");
 tw_next.addEventListener("click", next);
 tw_before.addEventListener("click", before);
 
-twP.innerHTML = makefeed(
-  tw_list[0].Message,
-  tw_list[0].username,
-  tw_list[0].work,
-  tw_list[0].url
-);
+twP.innerHTML = makefeed(tw_list...);
 
 function next() {
   tw_index++;
@@ -51,4 +46,5 @@ function makefeed(Message, username, work, work_url) {
   </div>
 </div>`;
 }
+
 

@@ -1,4 +1,114 @@
 @import url("https://fonts.googleapis.com/css2?family=Cairo&display=swap");
+.contact-us {
+  background: #fff;
+  padding: 10px 30px 50px;
+  margin: 5px auto 30px;
+  border-radius: 30px;
+  position: relative;
+  width: 50%;
+}
+
+.title h1 {
+  font-size: 2em;
+  color: #535274;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form,
+.form-items {
+  width: 100%;
+}
+
+.form-items .input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+}
+
+.form-items .input .form-items .input.message {
+  height: 125px;
+  border-radius: 15px;
+  margin-bottom: 30px;
+  padding: 15px 15px;
+  resize: none;
+}
+
+.form-items {
+  position: relative;
+}
+
+.form-items .fas {
+  position: absolute;
+  top: 15px;
+  left: 15px;
+  color: #9a99aa;
+}
+
+.btn {
+  background: #827ffe;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+}
+
+.btn .btn .fas {
+  margin-left: 10px;
+  font-size: 12px;
+}
+
+.social-icons {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 200px;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.social-icons div {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  position: relative;
+  cursor: pointer;
+}
+
+.social-icons div .fab {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  color: #fff;
+}
+
+.social-icons div.github {
+  background: #34363a;
+}
+
+.social-icons div.twitter {
+  background: #41caf6;
+}
+
+.social-icons div.telegram {
+  background: #32afed;
+}
+
 * {
   padding: 0px;
   margin: 0px;
@@ -296,12 +406,16 @@ footer h3 span::before {
   content: " : ";
 }
 
-#tw-h {
+#tap4 {
+  margin-bottom: 30px;
+}
+
+#tap4 #tw-h {
   font-size: 2em;
   text-align: center;
 }
 
-#twitter-list {
+#tap4 #twitter-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -311,7 +425,7 @@ footer h3 span::before {
           flex-direction: row;
 }
 
-#twitter-list > div .tw-1 {
+#tap4 #twitter-list > div .tw-1 {
   display: block;
   color: #000000;
   background-position: bottom;
@@ -321,7 +435,7 @@ footer h3 span::before {
   padding: 5px;
 }
 
-#twitter-list > div .tw-1 > div {
+#tap4 #twitter-list > div .tw-1 > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -331,23 +445,23 @@ footer h3 span::before {
   padding-bottom: 5px;
 }
 
-#twitter-list > div .tw-1 > div h3 {
+#tap4 #twitter-list > div .tw-1 > div h3 {
   margin-left: auto;
   font-size: 2em;
 }
 
-#twitter-list > div .tw-1 > div img {
+#tap4 #twitter-list > div .tw-1 > div img {
   width: 40px;
   height: 40px;
   margin: auto auto auto 0;
   border-radius: 50%;
 }
 
-#twitter-list > div .tw-1 p {
+#tap4 #twitter-list > div .tw-1 p {
   text-align: center;
 }
 
-#out-tw {
+#tap4 #out-tw {
   width: 70%;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -355,13 +469,32 @@ footer h3 span::before {
   margin: 0 auto;
 }
 
-#out-tw p {
+#tap4 #out-tw p {
   width: 100%;
   text-align: center;
 }
 
-#out-tw i {
+#tap4 #out-tw i {
   margin: auto 0;
+}
+
+#tap5 {
+  background: #7f7df9;
+}
+
+#tap5 *:not(i) {
+  font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
+}
+
+#tap5 > div {
+  width: 100%;
+}
+
+#tap5 iframe {
+  margin: auto;
+  width: 90%;
+  height: 90%;
+  border-radius: 10px;
 }
 
 @media (max-width: 716px) {

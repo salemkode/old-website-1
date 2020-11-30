@@ -1,0 +1,98 @@
+.contact-us {
+  background: #fff;
+  padding: 10px 30px 50px;
+  margin: 5px auto 30px;
+  border-radius: 30px;
+  position: relative;
+  width: 50%;
+}
+
+.title h1 {
+  font-size: 2em;
+  color: #535274;
+  letter-spacing: 0px;
+  margin-bottom: 10px;
+  text-align: center;
+}
+
+.form,
+.form-items {
+  width: 100%;
+}
+
+.form-items .input {
+  width: 100%;
+  margin-bottom: 12px;
+  padding: 15px 40px;
+  box-sizing: border-box;
+  background: #ebeef1;
+  border: 0px;
+  outline: none;
+  border-radius: 30px;
+
+  .form-items .input.message {
+    height: 125px;
+    border-radius: 15px;
+    margin-bottom: 30px;
+    padding: 15px 15px;
+    resize: none;
+  }
+}
+.form-items {
+  position: relative;
+
+  .fas {
+    position: absolute;
+    top: 15px;
+    left: 15px;
+    color: #9a99aa;
+  }
+}
+.btn {
+  background: #827ffe;
+  text-align: center;
+  color: #fff;
+  padding: 12px;
+  border-radius: 25px;
+  cursor: pointer;
+
+  .btn .fas {
+    margin-left: 10px;
+    font-size: 12px;
+  }
+}
+
+.social-icons {
+  position: absolute;
+  bottom: -25px;
+  left: 50%;
+  width: 200px;
+  transform: translateX(-50%);
+  display: flex;
+  justify-content: space-around;
+  div {
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    position: relative;
+    cursor: pointer;
+  }
+  div .fab {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
+  }
+  div.github {
+    background: #34363a;
+  }
+
+  div.twitter {
+    background: #41caf6;
+  }
+
+  div.telegram {
+    background: #32afed;
+  }
+}
