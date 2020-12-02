@@ -1,0 +1,15 @@
+path {
+  fill: $sec-color;
+  z-index: 0;
+}
+
+.spas {
+  margin-bottom: -10px;
+  width: 100%;
+  transition-duration: 1s;
+
+}
+#path1 {
+  transform: scale(-1);
+  margin-top: -10px;
+}

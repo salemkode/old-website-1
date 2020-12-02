@@ -53,7 +53,7 @@
 }
 
 .btn {
-  background: #827ffe;
+  background: #2b5069;
   text-align: center;
   color: #fff;
   padding: 12px;
@@ -139,7 +139,7 @@ a {
 }
 
 header {
-  background-color: #1d3557;
+  background-color: #2b5069;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -210,28 +210,6 @@ header #bu i {
 
 header #bu span {
   margin: auto;
-}
-
-article {
-  /*
-#test {
-  .bar-holder {
-    width: 95%;
-    background-color: rgb(231, 231, 231);
-    border-radius: 20px;
-    margin: 0 auto;
-  }
-
-  .bar-1 {
-    width: 40%;
-    background-color: rgb(226, 226, 69);
-    color: rgb(0, 0, 0);
-    border-radius: 20px;
-    text-align: center;
-    margin-top: 2px;
-    font-weight: 400;
-  }
-}*/
 }
 
 article #tap1 {
@@ -313,11 +291,11 @@ article #tap2 #card-holder {
 article #tap2 #card-holder > * {
   width: 50%;
   text-align: center;
-  border: #453058 1px solid;
+  border: 4px solid;
+  border-image-slice: 0.5;
+  border-image-source: linear-gradient(to left, #743ad5, #d53a9d);
   padding: 6px;
   margin: 5px;
-  border-radius: 10px;
-  background: url("../res/bac.jpg") center;
   background-size: cover;
   background-origin: border-box;
   background-repeat: no-repeat;
@@ -325,18 +303,16 @@ article #tap2 #card-holder > * {
 
 article #tap2 #card-holder > * h4 {
   font-size: 5vh;
-  color: #ffffff;
+  color: #000000;
 }
 
 article #tap2 #card-holder > * p {
   font-size: 3vh;
-  color: #ffffff;
+  color: #000000;
 }
 
 article #tap2 #card-holder #card2 {
-  background-image: url("../res/bac2.jpg");
-  background-origin: border-box;
-  background-position: top;
+  border-image-source: linear-gradient(to right, #743ad5, #d53a9d);
 }
 
 article #tap3 {
@@ -392,30 +368,34 @@ article #tap3 li:nth-of-type(5) a {
   color: #3a3aad;
 }
 
-footer {
-  text-align: center;
-  background-color: #1d3557;
+article path {
+  fill: #2b5069;
+  z-index: 0;
 }
 
-footer h3 {
-  color: white;
-  font-size: 1.5em;
+article .spas {
+  margin-bottom: -10px;
+  width: 100%;
+  -webkit-transition-duration: 1s;
+          transition-duration: 1s;
 }
 
-footer h3 span::before {
-  content: " : ";
+article #path1 {
+  -webkit-transform: scale(-1);
+          transform: scale(-1);
+  margin-top: -10px;
 }
 
-#tap4 {
+article #tap4 {
   margin-bottom: 30px;
 }
 
-#tap4 #tw-h {
+article #tap4 #tw-h {
   font-size: 2em;
   text-align: center;
 }
 
-#tap4 #twitter-list {
+article #tap4 #twitter-list {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -425,7 +405,7 @@ footer h3 span::before {
           flex-direction: row;
 }
 
-#tap4 #twitter-list > div .tw-1 {
+article #tap4 #twitter-list > div .tw-1 {
   display: block;
   color: #000000;
   background-position: bottom;
@@ -435,7 +415,7 @@ footer h3 span::before {
   padding: 5px;
 }
 
-#tap4 #twitter-list > div .tw-1 > div {
+article #tap4 #twitter-list > div .tw-1 > div {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -445,56 +425,101 @@ footer h3 span::before {
   padding-bottom: 5px;
 }
 
-#tap4 #twitter-list > div .tw-1 > div h3 {
+article #tap4 #twitter-list > div .tw-1 > div h3 {
   margin-left: auto;
   font-size: 2em;
 }
 
-#tap4 #twitter-list > div .tw-1 > div img {
+article #tap4 #twitter-list > div .tw-1 > div img {
   width: 40px;
   height: 40px;
   margin: auto auto auto 0;
   border-radius: 50%;
 }
 
-#tap4 #twitter-list > div .tw-1 p {
+article #tap4 #twitter-list > div .tw-1 p {
   text-align: center;
 }
 
-#tap4 #out-tw {
-  width: 70%;
+article #tap4 #out-tw {
+  width: 80%;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
-  margin: 0 auto;
+  margin: 20px auto 0;
 }
 
-#tap4 #out-tw p {
-  width: 100%;
+article #tap4 #out-tw h1 {
+  font-size: 1.5em;
+  margin: auto;
   text-align: center;
 }
 
-#tap4 #out-tw i {
-  margin: auto 0;
+article #tap4 #out-tw i {
+  margin: auto 10px;
 }
 
-#tap5 {
-  background: #7f7df9;
+article #tap5 {
+  background: #2b5069;
 }
 
-#tap5 *:not(i) {
+article #tap5 *:not(i) {
   font-family: "Franklin Gothic Medium", "Arial Narrow", Arial, sans-serif;
 }
 
-#tap5 > div {
+article #tap5 > div {
   width: 100%;
 }
 
-#tap5 iframe {
+article #tap5 iframe {
   margin: auto;
   width: 90%;
   height: 90%;
   border-radius: 10px;
+}
+
+footer {
+  border-top: white 2px solid;
+  text-align: center;
+  background-color: #2b5069;
+}
+
+footer h3 {
+  color: white;
+  font-size: 1.5em;
+}
+
+@media (max-width: 965px) {
+  article #tap2 {
+    margin: 0;
+    padding: 0px;
+  }
+  article #tap2 #card-holder {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    margin: 0px;
+    padding: 0px;
+    width: 100%;
+    margin: 0;
+    padding: 0px;
+    text-align: center;
+  }
+  article #tap2 #card-holder > * {
+    margin: 10px auto;
+    width: calc(100% - 42px);
+    font-size: 20px;
+  }
+  article #tap2 #card-holder > * p {
+    padding: 5px 0;
+  }
+  article .spas {
+    width: 150%;
+  }
 }
 
 @media (max-width: 716px) {
@@ -564,87 +589,58 @@ footer h3 span::before {
   }
   article #tap1 #left {
     width: 100%;
-    padding: 0px;
+    padding: 0px 0 0 30px;
     padding-right: 0px;
     text-align: left;
   }
   article #tap1 #left h2 {
-    width: calc(100% - 30);
+    width: auto;
     font-size: 0.7em;
   }
-  article #tap1 #left #follow ul {
-    margin: 30px 0 0 0;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    list-style: none;
-    -ms-flex-pack: distribute;
-        justify-content: space-around;
-  }
-  article #tap1 #left #follow ul a {
-    color: black;
-    font-size: 2.5em;
-  }
-  article #tap1 #left #follow ul a:hover {
-    color: #23597c;
+  article .spas {
+    width: 200%;
   }
   article #tap3 ul {
     overflow: auto;
   }
-  #twitter-list {
+  article #twitter-list {
     padding: 3px 0;
     width: 100%;
   }
-  #twitter-list .tw-1 {
+  article #twitter-list .tw-1 {
     border-radius: 8px;
     width: 100%;
     margin: 0px;
     margin-bottom: 5px;
     padding: 4px 10px 10px 10px;
   }
-  #twitter-list .tw-1 p {
+  article #twitter-list .tw-1 p {
     height: auto;
     width: 100%;
   }
-  #out-tw {
+  article #out-tw {
     width: 100%;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     margin: 0 auto;
   }
-  #out-tw i {
+  article #out-tw i {
     margin: auto 0;
   }
-}
-
-@media (max-width: 965px) {
-  article #tap2 {
-    margin: 0;
-    padding: 0px;
-  }
-  article #tap2 #card-holder {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
+  article #tap5 {
     -webkit-box-orient: vertical;
     -webkit-box-direction: normal;
         -ms-flex-direction: column;
             flex-direction: column;
-    margin: 0px;
-    padding: 0px;
+  }
+  article #tap5 #map {
+    height: 320px;
+    width: 70%;
+    margin: auto;
+  }
+  article #tap5 #map iframe {
     width: 100%;
-    margin: 0;
-    padding: 0px;
-    text-align: center;
-  }
-  article #tap2 #card-holder > * {
-    margin: 10px auto;
-    width: calc(100% - 42px);
-    font-size: 20px;
-  }
-  article #tap2 #card-holder > * p {
-    padding: 5px 0;
   }
 }
 
@@ -658,21 +654,5 @@ footer h3 span::before {
   article #tap2 #card-holder > * p {
     font-size: 15px;
   }
-}
-
-.small {
-  font-size: small;
-}
-
-.text-center {
-  text-align: center;
-}
-
-.carousel-item-width {
-  width: 100%;
-}
-
-.mx-auto {
-  margin: auto;
 }
 /*# sourceMappingURL=style.css.map */
