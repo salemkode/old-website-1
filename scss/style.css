@@ -1,0 +1,125 @@
+@import "../cairoFont/cauro.css";
+:root {
+  --main-color: red;
+}
+
+body,
+html {
+  font-family: "Cairo", sans-serif;
+  width: 100%;
+  height: 100%;
+}
+
+.sec-head {
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
+}
+
+.landing-page {
+  width: 100%;
+  height: 100%;
+  background: url(../bg-1.jpg) center;
+  background-size: cover;
+  color: white;
+  position: relative;
+  text-align: center;
+  height: 100%;
+}
+.landing-page .cover {
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  background-color: black;
+  opacity: 0.5;
+  z-index: 1;
+}
+.landing-page .header-area {
+  z-index: 2;
+  position: relative;
+}
+.landing-page .header-area .logo {
+  margin-left: 5px;
+}
+.landing-page .header-area ul {
+  margin: auto 10px auto auto;
+}
+.landing-page .header-area ul li {
+  margin: 5px;
+}
+.landing-page .header-area ul li a {
+  color: white;
+  text-decoration: none;
+}
+.landing-page .header-area ul li a:hover {
+  color: var(--main-color);
+}
+.landing-page .body-area {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  margin: auto;
+  z-index: 2;
+}
+
+.about-page .info {
+  display: flex;
+  margin: auto 5px;
+}
+.about-page .info img {
+  border-radius: 50%;
+  height: 300px;
+}
+.about-page .info p {
+  margin: auto 10px;
+}
+
+.time-line {
+  background: #eee;
+  padding: 50px 0;
+}
+.time-line .content .child-contener {
+  position: relative;
+  overflow: hidden;
+  margin-top: -2px;
+}
+.time-line .content .child-contener::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  margin: -1px;
+  top: 0;
+}
+.time-line .content .child-contener .year {
+  text-align: center;
+  position: relative;
+  z-index: 2;
+  background-color: var(--main-color);
+  width: 50px;
+  margin: 5px auto;
+  border-radius: 4px;
+  color: white;
+  padding: 2px;
+  font-weight: bold;
+}
+.time-line .content .left, .time-line .content .right {
+  width: calc(50% - 40px);
+  text-align: center;
+  background: azure;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  transition: 0.3s;
+  margin: 15px;
+  padding: 5px;
+}
+.time-line .content .left {
+  float: left;
+}
+.time-line .content .right {
+  float: right;
+}
+
+/*# sourceMappingURL=style.css.map */
