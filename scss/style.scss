@@ -9,73 +9,21 @@ html {
   width: 100%;
   height: 100%;
 }
-.sec-head {
-  font-weight: bold;
-  text-align: right;
-  margin-right: 10px;
-}
-.landing-page {
-  width: 100%;
-  height: 100%;
-  background: url(../bg-1.jpg) center;
-  background-size: cover;
-  color: white;
-  position: relative;
-  text-align: center;
-  height: 100%;
-  .cover {
-    position: absolute;
-    height: 100%;
-    width: 100%;
-    background-color: black;
-    opacity: 0.5;
-    z-index: 1;
-  }
-  .header-area {
-    z-index: 2;
-    position: relative;
-    .logo {
-      margin-left: 5px;
-    }
-    ul {
-      margin: auto 10px auto auto;
-      li {
-        margin: 5px;
-        a {
-          color: white;
-          text-decoration: none;
-          &:hover {
-            color: var(--main-color);
-          }
-        }
-      }
-    }
-  }
-  .body-area {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translate(-50%, -50%);
-    margin: auto;
-    z-index: 2;
-  }
+.landing-page{
+  @import "./viwe/landing";
 }
 .about-page {
-  .info {
-    display: flex;
-    margin: auto 5px;
-    img {
-      border-radius: 50%;
-      height: 300px;
-    }
-    p {
-      margin: auto 10px;
-    }
-  }
+  @import "./viwe/about";
 }
 .skill-page {
-
+  @import "./viwe/skill";
 }
-.time-line{
-  @import "./timeLine";
+.pro-page{
+  @import "./viwe/pro";
 }
+.time-line {
+  @import "./viwe/timeLine";
+}
+@import "./Component/containers";
+@import "./Component/card";
+@import "./Component/colums";

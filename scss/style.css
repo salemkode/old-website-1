@@ -10,12 +10,6 @@ html {
   height: 100%;
 }
 
-.sec-head {
-  font-weight: bold;
-  text-align: right;
-  margin-right: 10px;
-}
-
 .landing-page {
   width: 100%;
   height: 100%;
@@ -25,6 +19,11 @@ html {
   position: relative;
   text-align: center;
   height: 100%;
+}
+.landing-page .sec-head {
+  font-weight: bold;
+  text-align: right;
+  margin-right: 10px;
 }
 .landing-page .cover {
   position: absolute;
@@ -36,18 +35,22 @@ html {
 }
 .landing-page .header-area {
   z-index: 2;
+  display: flex;
   position: relative;
 }
 .landing-page .header-area .logo {
   margin-left: 5px;
 }
 .landing-page .header-area ul {
+  display: flex;
+  list-style: none;
   margin: auto 10px auto auto;
 }
 .landing-page .header-area ul li {
   margin: 5px;
 }
 .landing-page .header-area ul li a {
+  cursor: pointer;
   color: white;
   text-decoration: none;
 }
@@ -63,28 +66,115 @@ html {
   z-index: 2;
 }
 
-.about-page .info {
+.skill-page .cardHolder {
   display: flex;
-  margin: auto 5px;
 }
-.about-page .info img {
-  border-radius: 50%;
+.skill-page .cardHolder .card {
+  border: solid 0.1px gray;
+  position: relative;
+  color: white;
+  background: url("../../src/web.jpg") center;
+  background-size: cover;
+}
+.skill-page .cardHolder .card:last-child {
+  background: url("../../src/bot.jpg") center;
+}
+.skill-page .cardHolder .card .cover {
+  background-color: black;
+  opacity: 0.5;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  top: 0;
+  right: 0;
+}
+.skill-page .cardHolder .card .content {
+  position: relative;
+  z-index: 2;
+}
+
+.pro-page {
+  background-color: gray;
+}
+.pro-page .nav .type-pro {
+  display: flex;
+  justify-content: center;
+}
+.pro-page .nav .type-pro .card {
+  background-color: white;
+  padding: 10px;
+}
+.pro-page .nav .type-pro .card.active {
+  background: orange;
+}
+.pro-page .cards-list {
+  z-index: 0;
+  width: 100%;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+.pro-page .cards-list .cards {
+  margin: 30px auto;
+  width: 300px;
   height: 300px;
+  border-radius: 40px;
+  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+  cursor: pointer;
+  transition: 0.4s;
 }
-.about-page .info p {
-  margin: auto 10px;
+.pro-page .cards-list .cards .card_image {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+}
+.pro-page .cards-list .cards .card_image img {
+  width: inherit;
+  height: inherit;
+  border-radius: 40px;
+  object-fit: cover;
+}
+.pro-page .cards-list .cards .card_title {
+  text-align: center;
+  border-radius: 0px 0px 40px 40px;
+  font-family: sans-serif;
+  font-weight: bold;
+  font-size: 30px;
+  margin-top: -80px;
+  height: 40px;
+}
+.pro-page .cards-list .cards:hover {
+  transform: scale(0.9, 0.9);
+  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
+}
+.pro-page .cards-list .title-white {
+  color: white;
+}
+.pro-page .cards-list .title-black {
+  color: black;
+}
+@media all and (max-width: 500px) {
+  .pro-page .card-list {
+    /* On small screens, we are no longer using row direction but column */
+    flex-direction: column;
+  }
+}
+.pro-page .card-col {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+.pro-page .card-col .card {
+  width: calc(33% - 20px);
 }
 
 .time-line {
   background: #eee;
+  position: relative;
   padding: 50px 0;
 }
-.time-line .content .child-contener {
-  position: relative;
-  overflow: hidden;
-  margin-top: -2px;
-}
-.time-line .content .child-contener::before {
+.time-line::before {
   content: "";
   width: 2px;
   height: 100%;
@@ -93,6 +183,11 @@ html {
   left: 50%;
   margin: -1px;
   top: 0;
+}
+.time-line .content .child-contener {
+  position: relative;
+  overflow: hidden;
+  margin-top: -2px;
 }
 .time-line .content .child-contener .year {
   text-align: center;
@@ -106,7 +201,8 @@ html {
   padding: 2px;
   font-weight: bold;
 }
-.time-line .content .left, .time-line .content .right {
+.time-line .content .left,
+.time-line .content .right {
   width: calc(50% - 40px);
   text-align: center;
   background: azure;
@@ -120,6 +216,49 @@ html {
 }
 .time-line .content .right {
   float: right;
+}
+
+.container {
+  width: 100%;
+  padding-right: var(--bs-gutter-x, 0.75rem);
+  padding-left: var(--bs-gutter-x, 0.75rem);
+  margin-right: auto;
+  margin-left: auto;
+}
+
+@media (min-width: 576px) {
+  .container {
+    max-width: 540px;
+  }
+}
+@media (min-width: 768px) {
+  .container {
+    max-width: 720px;
+  }
+}
+@media (min-width: 992px) {
+  .container {
+    max-width: 960px;
+  }
+}
+@media (min-width: 1200px) {
+  .container {
+    max-width: 1140px;
+  }
+}
+@media (min-width: 1400px) {
+  .container {
+    max-width: 1320px;
+  }
+}
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  background: white;
+  transition: 0.3s;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 5px;
+  text-align: center;
 }
 
 /*# sourceMappingURL=style.css.map */

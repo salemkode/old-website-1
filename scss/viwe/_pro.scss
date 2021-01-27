@@ -1,0 +1,25 @@
+&{
+    background-color: gray;
+    .nav{
+        .type-pro{
+            display: flex;
+            justify-content: center;
+            .card{
+                background-color: white;
+                padding: 10px;
+                &.active{
+                    background: orange;
+                }
+            }
+        }
+    }
+    @import "../Component/progect";
+    .card-col{
+        display: flex;
+        justify-content: center;
+        flex-wrap: wrap;
+        .card{
+            width: calc(33% - 20px);
+        }
+    }
+}

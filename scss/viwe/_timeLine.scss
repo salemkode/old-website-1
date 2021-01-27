@@ -1,22 +1,24 @@
 & {
   background: #eee;
+  position: relative;
   padding: 50px 0;
 }
+&::before {
+  content: "";
+  width: 2px;
+  height: 100%;
+  background-color: var(--main-color);
+  position: absolute;
+  left: 50%;
+  margin: -1px;
+  top: 0;
+}
+
 .content {
   .child-contener {
     position: relative;
     overflow: hidden;
     margin-top: -2px;
-    &::before {
-      content: "";
-      width: 2px;
-      height: 100%;
-      background-color: var(--main-color);
-      position: absolute;
-      left: 50%;
-      margin: -1px;
-      top: 0;
-    }
     .year {
       text-align: center;
       position: relative;
@@ -30,7 +32,8 @@
       font-weight: bold;
     }
   }
-  .left , .right {
+  .left,
+  .right {
     width: calc(50% - 40px);
     text-align: center;
     background: azure;
@@ -39,11 +42,10 @@
     margin: 15px;
     padding: 5px;
   }
-  .left{
+  .left {
     float: left;
-  }    
-  .right{
+  }
+  .right {
     float: right;
   }
-
 }
