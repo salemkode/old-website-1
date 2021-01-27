@@ -15,3 +15,15 @@ html_bolit.forEach( (li) => {
 });
 */
 
+let tap_prpgect = document.querySelectorAll(".pro-page .nav .type-pro *");
+
+tap_prpgect.forEach(
+  tap => {
+    tap.onclick = ()=>{
+      tap_prpgect.forEach(
+        e => e.classList.remove('active')
+      )
+      tap.classList.add('active');
+    };
+  }
+)
