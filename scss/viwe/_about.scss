@@ -1,0 +1,14 @@
+.card{
+    display: flex;
+    background-color: var(--sec-color);
+    img{
+        height: 150px;
+        border-radius: 50%;
+    }
+    p{
+        margin: auto;
+        padding: 0 5px;
+        color: white;
+        font-size: larger;
+    }
+}

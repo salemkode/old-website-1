@@ -1,6 +1,29 @@
 @import "../cairoFont/cauro.css";
 :root {
-  --main-color: red;
+  --main-color: #fd7e14;
+  --sec-color: #0d6efd;
+  /*boot strap color*/
+  --bs-blue: #0d6efd;
+  --bs-indigo: #6610f2;
+  --bs-purple: #6f42c1;
+  --bs-pink: #d63384;
+  --bs-red: #dc3545;
+  --bs-orange: #fd7e14;
+  --bs-yellow: #ffc107;
+  --bs-green: #198754;
+  --bs-teal: #20c997;
+  --bs-cyan: #0dcaf0;
+  --bs-white: #fff;
+  --bs-gray: #6c757d;
+  --bs-gray-dark: #343a40;
+  --bs-primary: #0d6efd;
+  --bs-secondary: #6c757d;
+  --bs-success: #198754;
+  --bs-info: #0dcaf0;
+  --bs-warning: #ffc107;
+  --bs-danger: #dc3545;
+  --bs-light: #f8f9fa;
+  --bs-dark: #212529;
 }
 
 body,
@@ -66,9 +89,25 @@ html {
   z-index: 2;
 }
 
+.about-page .card {
+  display: flex;
+  background-color: var(--sec-color);
+}
+.about-page .card img {
+  height: 150px;
+  border-radius: 50%;
+}
+.about-page .card p {
+  margin: auto;
+  padding: 0 5px;
+  color: white;
+  font-size: larger;
+}
+
 .skill-page .cardHolder {
   display: flex;
   line-height: 1.5;
+  font-size: 1.2em;
 }
 .skill-page .cardHolder .card {
   border: solid 0.1px gray;
@@ -83,7 +122,7 @@ html {
 }
 .skill-page .cardHolder .card .cover {
   background-color: black;
-  opacity: 0.67;
+  opacity: 0.8;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -97,7 +136,8 @@ html {
 }
 
 .pro-page {
-  background-color: gray;
+  margin-bottom: 10px;
+  margin-top: 10px;
 }
 .pro-page .nav .type-pro {
   display: flex;
@@ -106,15 +146,16 @@ html {
 .pro-page .nav .type-pro .card {
   background-color: white;
   padding: 10px;
+  cursor: pointer;
 }
 .pro-page .nav .type-pro .card.active {
-  background: orange;
+  background: var(--sec-color);
+  color: white;
 }
 .pro-page .img-list {
   z-index: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
 }
 .pro-page .img-list .img-holder {
@@ -134,7 +175,7 @@ html {
   display: none;
   color: white;
   background-color: black;
-  opacity: 0.67;
+  opacity: 0.9;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -150,7 +191,7 @@ html {
   opacity: 1;
 }
 .pro-page .img-list .img-holder img {
-  height: 200px;
+  height: 210px;
 }
 .pro-page .img-list .img-holder:hover .cover {
   display: flex;
@@ -172,7 +213,7 @@ html {
 .time-line::before {
   content: "";
   width: 2px;
-  height: 100%;
+  height: 99%;
   background-color: var(--main-color);
   position: absolute;
   left: 50%;
@@ -196,21 +237,26 @@ html {
   padding: 2px;
   font-weight: bold;
 }
-.time-line .content .left,
-.time-line .content .right {
+.time-line .content .child-contener .left,
+.time-line .content .child-contener .right {
   width: calc(50% - 40px);
   text-align: center;
   background: azure;
   box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
   transition: 0.3s;
+  border-radius: 15px;
   margin: 15px;
   padding: 5px;
 }
-.time-line .content .left {
+.time-line .content .child-contener .left {
   float: left;
 }
-.time-line .content .right {
+.time-line .content .child-contener .right {
   float: right;
+}
+
+section > h2 {
+  text-align: right;
 }
 
 .container {

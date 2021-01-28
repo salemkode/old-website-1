@@ -2,7 +2,6 @@
   z-index: 0;
   width: 100%;
   display: flex;
-  justify-content: space-around;
   flex-wrap: wrap;
   .img-holder {
     cursor: pointer;
@@ -20,7 +19,7 @@
       display: none;
       color: white;
       background-color: black;
-      opacity: 0.67;
+      opacity: 0.9;
       position: absolute;
       height: 100%;
       width: 100%;
@@ -36,7 +35,7 @@
       opacity: 1;
     }
     img {
-      height: 200px;
+      height: 210px;
     }
     &:hover {
       .cover{
