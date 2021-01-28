@@ -17,12 +17,4 @@
         }
     }
     @import "../Component/progect";
-    .card-col{
-        display: flex;
-        justify-content: center;
-        flex-wrap: wrap;
-        .card{
-            width: calc(33% - 20px);
-        }
-    }
 }

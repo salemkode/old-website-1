@@ -157,6 +157,9 @@ html {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
+  background-color: var(--sec-color);
+  border-radius: 10px;
+  padding: 15px;
 }
 .pro-page .img-list .img-holder {
   cursor: pointer;
@@ -195,14 +198,6 @@ html {
 }
 .pro-page .img-list .img-holder:hover .cover {
   display: flex;
-}
-.pro-page .card-col {
-  display: flex;
-  justify-content: center;
-  flex-wrap: wrap;
-}
-.pro-page .card-col .card {
-  width: calc(33% - 20px);
 }
 
 .time-line {
