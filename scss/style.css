@@ -68,20 +68,22 @@ html {
 
 .skill-page .cardHolder {
   display: flex;
+  line-height: 1.5;
 }
 .skill-page .cardHolder .card {
   border: solid 0.1px gray;
   position: relative;
   color: white;
+  width: 100%;
   background: url("../../src/web.jpg") center;
   background-size: cover;
 }
 .skill-page .cardHolder .card:last-child {
-  background: url("../../src/bot.jpg") center;
+  background: url("../../src/18326264 (Custom).jpg") center;
 }
 .skill-page .cardHolder .card .cover {
   background-color: black;
-  opacity: 0.5;
+  opacity: 0.67;
   position: absolute;
   height: 100%;
   width: 100%;
@@ -108,57 +110,50 @@ html {
 .pro-page .nav .type-pro .card.active {
   background: orange;
 }
-.pro-page .cards-list {
+.pro-page .img-list {
   z-index: 0;
   width: 100%;
   display: flex;
   justify-content: space-around;
   flex-wrap: wrap;
 }
-.pro-page .cards-list .cards {
-  margin: 30px auto;
-  width: 300px;
-  height: 300px;
-  border-radius: 40px;
-  box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.25), -5px -5px 30px 7px rgba(0, 0, 0, 0.22);
+.pro-page .img-list .img-holder {
   cursor: pointer;
-  transition: 0.4s;
+  position: relative;
+  height: 200px;
+  width: 300px;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border: white solid 3px;
+  margin: 3px;
+  border-radius: 15px;
 }
-.pro-page .cards-list .cards .card_image {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-}
-.pro-page .cards-list .cards .card_image img {
-  width: inherit;
-  height: inherit;
-  border-radius: 40px;
-  object-fit: cover;
-}
-.pro-page .cards-list .cards .card_title {
-  text-align: center;
-  border-radius: 0px 0px 40px 40px;
-  font-family: sans-serif;
-  font-weight: bold;
-  font-size: 30px;
-  margin-top: -80px;
-  height: 40px;
-}
-.pro-page .cards-list .cards:hover {
-  transform: scale(0.9, 0.9);
-  box-shadow: 5px 5px 30px 15px rgba(0, 0, 0, 0.25), -5px -5px 30px 15px rgba(0, 0, 0, 0.22);
-}
-.pro-page .cards-list .title-white {
+.pro-page .img-list .img-holder .cover {
+  display: none;
   color: white;
+  background-color: black;
+  opacity: 0.67;
+  position: absolute;
+  height: 100%;
+  width: 100%;
+  border-radius: 4px;
+  top: 0;
+  right: 0;
+  justify-items: center;
+  align-items: center;
+  text-align: center;
 }
-.pro-page .cards-list .title-black {
-  color: black;
+.pro-page .img-list .img-holder .cover-p {
+  background-color: transparent;
+  opacity: 1;
 }
-@media all and (max-width: 500px) {
-  .pro-page .card-list {
-    /* On small screens, we are no longer using row direction but column */
-    flex-direction: column;
-  }
+.pro-page .img-list .img-holder img {
+  height: 200px;
+}
+.pro-page .img-list .img-holder:hover .cover {
+  display: flex;
 }
 .pro-page .card-col {
   display: flex;

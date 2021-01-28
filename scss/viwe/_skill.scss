@@ -1,17 +1,19 @@
 .cardHolder {
   display: flex;
+  line-height: 1.5;
   .card {
     border: solid 0.1px gray;
     position: relative;
     color: white;
+    width: 100%;
     background: url("../../src/web.jpg") center;
     background-size: cover;
     &:last-child{
-        background: url("../../src/bot.jpg") center;
+        background: url("../../src/bot2.jpg") center;
     }
     .cover {
       background-color: black;
-      opacity: 0.5;
+      opacity: 0.67;
       position: absolute;
       height: 100%;
       width: 100%;
