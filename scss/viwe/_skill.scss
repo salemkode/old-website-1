@@ -6,10 +6,10 @@
     position: relative;
     color: white;
     width: 100%;
-    background: url("../../src/web.jpg") center;
+    background: url("../src/web.jpg") center;
     background-size: cover;
     &:last-child{
-        background: url("../../src/bot2.jpg") center;
+        background: url("../src/bot2.jpg") center;
     }
     .cover {
       background-color: black;

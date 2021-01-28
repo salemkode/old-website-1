@@ -19,13 +19,8 @@
     <select />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="e9d77c8f-9571-48bc-bf03-7ca5a1b1d252" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/Component/_progect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/Component/_progect.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css.map" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/viwe/_skill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/viwe/_skill.scss" afterDir="false" />
+    <list default="true" id="e9d77c8f-9571-48bc-bf03-7ca5a1b1d252" name="Default Changelist" comment="add images and skills secion">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -60,8 +55,15 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1611834024674</updated>
-      <workItem from="1611834025784" duration="1904000" />
+      <workItem from="1611834025784" duration="2325000" />
     </task>
+    <task id="LOCAL؜٠٠٠٠١" summary="add images and skills secion">
+      <created>1611836110800</created>
+      <option name="number" value="LOCAL؜٠٠٠٠١" />
+      <option name="presentableId" value="LOCAL؜٠٠٠٠١" />
+      <updated>1611836110800</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -78,6 +80,10 @@
       </map>
     </option>
   </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="add images and skills secion" />
+    <option name="LAST_COMMIT_MESSAGE" value="add images and skills secion" />
+  </component>
   <component name="WindowStateProjectService">
     <state x="406" y="252" key="#Chrome_Settings" timestamp="1611834172949">
       <screen x="0" y="0" width="1360" height="728" />
@@ -87,10 +93,10 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="38" y="153" width="1153" height="499" key="#Web_Browsers/0.0.1360.728@0.0.1360.728" timestamp="1611834258957" />
-    <state x="427" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611835802301">
+    <state x="427" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611835986728">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="427" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1360.728@0.0.1360.728" timestamp="1611835802301" />
+    <state x="427" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1360.728@0.0.1360.728" timestamp="1611835986728" />
     <state x="349" y="50" width="662" height="678" key="EditFileWatcherDialog" timestamp="1611834851971">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -103,5 +109,9 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="181" y="9" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1611834890879" />
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611836115194">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="272" y="97" key="Vcs.Push.Dialog.v2/0.0.1360.728@0.0.1360.728" timestamp="1611836115194" />
   </component>
 </project>

@@ -75,11 +75,11 @@ html {
   position: relative;
   color: white;
   width: 100%;
-  background: url("../../src/web.jpg") center;
+  background: url("../src/web.jpg") center;
   background-size: cover;
 }
 .skill-page .cardHolder .card:last-child {
-  background: url("../../src/bot2.jpg") center;
+  background: url("../src/bot2.jpg") center;
 }
 .skill-page .cardHolder .card .cover {
   background-color: black;
