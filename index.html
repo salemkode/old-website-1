@@ -2,145 +2,185 @@
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <link rel="stylesheet" href="css/normlize.css">
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
-  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/normlize.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="shortcut icon" href="favicon.svg" type="image/x-icon"/>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
 
-  <title>شماخ</title>
+    <title>شماخ</title>
 </head>
 
 <body>
 
-  <section class="landing-page">
+<div class="loader">
+    <style>
+        .loader {
+            position: fixed;
+            background: black;
+            height: 110%;
+            width: 110%;
+            top: 0;
+            left: 0;
+            z-index: 1000;
+        }
+        .loadSvg{
+            position: fixed;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%,-50%);
+        }
+    </style>
+    <svg xmlns="http://www.w3.org/2000/svg" class="loadSvg"
+         style="margin:auto;display:block; height: 100%" width="200px"viewBox="0 0 100 100"
+         preserveAspectRatio="xMidYMid">
+        <circle cx="50" cy="50" r="30" stroke="#46dff0" stroke-width="10" fill="none"></circle>
+        <circle cx="50" cy="50" r="30" stroke="#e90c59" stroke-width="8" stroke-linecap="round" fill="none">
+            <animateTransform attributeName="transform" type="rotate" repeatCount="indefinite" dur="1s"
+                              values="0 50 50;180 50 50;720 50 50" keyTimes="0;0.5;1"></animateTransform>
+            <animate attributeName="stroke-dasharray" repeatCount="indefinite" dur="1s"
+                     values="18.84955592153876 169.64600329384882;94.2477796076938 94.24777960769377;18.84955592153876 169.64600329384882"
+                     keyTimes="0;0.5;1"></animate>
+        </circle>
+    </svg>
+</div>
+
+
+<section class="landing-page">
     <div class="cover"></div>
     <div class="header-area" style="display: flex;">
-      <div class="logo">
-        <h2>تعريف شخصي</h2>
-      </div>
-      <ul>
-        <li><a href="https://t.me/superastorh" class="fi fi-telegram"></a>
-        </li>
-        <li><a href="https://twitter.com/superastorh" class="fi fi-twitter"></a>
-        </li>
-        <li><a href="https://github.com/superastorh" class="fi fi-github"></a>
-        </li>
-      </ul>
+        <div class="logo">
+            <h2>تعريف شخصي</h2>
+        </div>
+        <ul>
+            <li><a href="https://t.me/superastorh" class="fi fi-telegram"></a>
+            </li>
+            <li><a href="https://twitter.com/superastorh" class="fi fi-twitter"></a>
+            </li>
+            <li><a href="https://github.com/superastorh" class="fi fi-github"></a>
+            </li>
+        </ul>
     </div>
     <div class="body-area">
-      <h1>سالم محمد شماخ </h1>
-      <p>مطور واجهات المستخدم</p>
+        <h1>سالم محمد شماخ </h1>
+        <p>مطور واجهات المستخدم</p>
     </div>
-  </section>
+</section>
 
-  <section class="about-page container">
+<section class="about-page container">
     <h2 class="sec-head">معلومات عني </h2>
     <div class="card">
-      <p>انا سالم محمد شماخ طالب في ثانوية شبام للبنين ابلغ من العمر 18 عام اهتممت بالحاسوب منذ رايته اول مره و شرعت في
-        تعلم الحاسوب و دخلت عالم البرمجة من بابة الواسع</p>
-      <img src="src/bot.svg" alt="">
+        <p>انا سالم محمد شماخ طالب في ثانوية شبام للبنين ابلغ من العمر 18 عام اهتممت بالحاسوب منذ رايته اول مره و شرعت
+            في
+            تعلم الحاسوب و دخلت عالم البرمجة من بابة الواسع</p>
+        <img src="src/bot.svg" alt="">
     </div>
-  </section>
+</section>
 
-  <section class="skill-page container">
+<section class="skill-page container">
     <h2 class="sec-head">ماذا يمكنني ان افعل لك </h2>
     <div class="cardHolder">
 
-      <div class="card">
-        <div class="cover"></div>
-        <div class="content">
-          <h2>
-            تطوير واجهات المواقع
-          </h2>
-          <p>
-            باستخدام العديد من تقنيات الويب اقوم ببناء مواقع ويب متجاوبة مع الشاشات المختلفه و بجوده وتصميم عالي
-          </p>
+        <div class="card">
+            <div class="cover"></div>
+            <div class="content">
+                <h2>
+                    تطوير واجهات المواقع
+                </h2>
+                <p>
+                    باستخدام العديد من تقنيات الويب اقوم ببناء مواقع ويب متجاوبة مع الشاشات المختلفه و بجوده وتصميم عالي
+                </p>
+            </div>
         </div>
-      </div>
 
-      <div class="card">
-        <div class="cover"></div>
-        <div class="content">
-          <h2>
-            تطوير بوتات التيلحرام
-          </h2>
-          <p>اقوم ببناء بوتات تيلجرام ك هواية الامر جميل و يستحق</p>
+        <div class="card">
+            <div class="cover"></div>
+            <div class="content">
+                <h2>
+                    تطوير بوتات التيلحرام
+                </h2>
+                <p>اقوم ببناء بوتات تيلجرام ك هواية الامر جميل و يستحق</p>
+            </div>
         </div>
-      </div>
 
     </div>
-  </section>
+</section>
 
-  <section class="pro-page container">
+<section class="pro-page container">
     <h2 class="sec-head">بعض من اعمالي السابقه </h2>
 
     <base target="_blank">
     <div class="nav">
-      <div class="type-pro">
+        <div class="type-pro">
 
-        <div class="card active" @click="clicked($event , 0)">الكل</div>
-        <div class="card" @click="clicked($event , 2)">مواقع ويب</div>
-        <div class="card" @click="clicked($event , 1)">بوتات تيلجرام</div>
-      </div>
+            <div class="card active" @click="clicked($event , 0)">الكل</div>
+            <div class="card" @click="clicked($event , 2)">مواقع ويب</div>
+            <div class="card" @click="clicked($event , 1)">بوتات تيلجرام</div>
+        </div>
     </div>
     <div class="img-list">
-      <div class="img-holder" v-for="li in showItem" data-type="bot">
-          <a :href="li.url">
-            <div class="cover"></div>
-            <div class="cover cover-p">
-              {{li.text}}
-            </div>
-            <img :src="li.img" alt="" srcset="">
-          </a>
+        <div class="img-holder" v-for="li in showItem" data-type="bot">
+            <a :href="li.url">
+                <div class="cover"></div>
+                <div class="cover cover-p">
+                    {{li.text}}
+                </div>
+                <img :src="li.img" alt="" srcset="">
+            </a>
 
-      </div>
+        </div>
     </div>
-  </section>
+</section>
 
-  <section class="time-line">
+<section class="time-line">
     <div class="content">
-      <div class="child-contener">
-        <div class="year">2017</div>
-        <div class="left">
-          <h1>سكراتش هو البداية</h1>
-          <p>بدات تعلم سكرتش في هذه الفتره لم يكن الامر عبثا فقد فهمت العديد من المفاهيم البرمجية وقمت بعمل بعض الالعاب الجميلة به</p>
+        <div class="child-contener">
+            <div class="year">2017</div>
+            <div class="left">
+                <h1>سكراتش هو البداية</h1>
+                <p>بدات تعلم سكرتش في هذه الفتره لم يكن الامر عبثا فقد فهمت العديد من المفاهيم البرمجية وقمت بعمل بعض
+                    الالعاب الجميلة به</p>
+            </div>
         </div>
-      </div>
-      <div class="child-contener">
-        <div class="year">2019</div>
-        <div class="right">
-          <h1>تطبيق نقطة حبر</h1>
-          <p>اول تطبيق اكملته و قمت بنشره كان تطبيق للرسم كان اسمه (رسماتي)
-            ثم غيرته الى نقطة حبر نشرت التطبيق على متجرالتطبيقات لاكن قمت بحذفه موخرا بسبب عدم قدرتي على الاستمرار في تطويره</p>
+        <div class="child-contener">
+            <div class="year">2019</div>
+            <div class="right">
+                <h1>تطبيق نقطة حبر</h1>
+                <p>اول تطبيق اكملته و قمت بنشره كان تطبيق للرسم كان اسمه (رسماتي)
+                    ثم غيرته الى نقطة حبر نشرت التطبيق على متجرالتطبيقات لاكن قمت بحذفه موخرا بسبب عدم قدرتي على
+                    الاستمرار في تطويره</p>
+            </div>
         </div>
-      </div>
-      <div class="child-contener">
-        <div class="year">2020</div>
-        <div class="left">
-          <h1>الى عالم الويب</h1>
-          <p>كنت قد حاولت دخول عالم الويب من قبل لاكن هذه المره انطلقت و ابحرت في هذا العالم الجميل و ها انا هنا الان </p>
+        <div class="child-contener">
+            <div class="year">2020</div>
+            <div class="left">
+                <h1>الى عالم الويب</h1>
+                <p>كنت قد حاولت دخول عالم الويب من قبل لاكن هذه المره انطلقت و ابحرت في هذا العالم الجميل و ها انا هنا
+                    الان </p>
+            </div>
         </div>
-      </div>
-      <div class="child-contener">
-        <div class="year">2021</div>
-        <div class="right">
-          <h1>هذا العام</h1>
-          <p>احببت وضع هذا الفراغ لي لاكتب و اعبر فيه في المستقبل</p>
+        <div class="child-contener">
+            <div class="year">2021</div>
+            <div class="right">
+                <h1>هذا العام</h1>
+                <p>احببت وضع هذا الفراغ لي لاكتب و اعبر فيه في المستقبل</p>
+            </div>
         </div>
-      </div>
     </div>
-  </section>
+</section>
 
 
-  <section class="footer">
+<section class="footer">
     جميع الحقوق محفوظه 2021
-  </section>
+</section>
 
-  <script src="./script/vue.js"></script>
-  <script src="./script/app.js"></script>
-  <script src="./script/main.js"></script>
+<script>
+    window.onload = e=> document.querySelector(".loader").style.display = "none";
+</script>
+<script src="./script/vue.js"></script>
+<script src="./script/app.js"></script>
+<script src="./script/main.js"></script>
 
 </body>
 
