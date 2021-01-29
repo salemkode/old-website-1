@@ -5,6 +5,12 @@
   margin-right: auto;
   margin-left: auto;
 }
+@media (max-width: 576px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;

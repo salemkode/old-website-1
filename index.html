@@ -7,41 +7,44 @@
   <link rel="stylesheet" href="css/normlize.css">
   <link rel="stylesheet" href="css/style.css">
   <link rel="shortcut icon" href="favicon.svg" type="image/x-icon" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/fontisto@v3.0.4/css/fontisto/fontisto.min.css">
+
   <title>شماخ</title>
 </head>
 
 <body>
-  
+
   <section class="landing-page">
     <div class="cover"></div>
     <div class="header-area" style="display: flex;">
       <div class="logo">
         <h2>تعريف شخصي</h2>
-        </div>
-        <ul>
-          <li> <a>الرئيسية </a> </li>
-          <li> <a>معرض اعمالي </a> </li>
-          <li> <a>تواصل معي </a> </li>
-        </ul>
+      </div>
+      <ul>
+        <li> <a>الرئيسية </a> </li>
+        <li> <a>معرض اعمالي </a> </li>
+        <li> <a>تواصل معي </a> </li>
+      </ul>
     </div>
     <div class="body-area">
       <h1>سالم محمد شماخ </h1>
       <p>مطور واجهات المستخدم</p>
     </div>
   </section>
-  
+
   <section class="about-page container">
     <h2 class="sec-head">معلومات عني </h2>
     <div class="card">
-      <p>انا سالم محمد شماخ طالب في ثانوية شبام للبنين ابلغ من العمر 18 عام اهتممت بالحاسوب منذ رايته اول مره و شرعت  في تعلم الحاسوب و دخلت عالم البرمجة من بابة الواسع</p>
-      <img src="src/bot.svg" alt="" >
+      <p>انا سالم محمد شماخ طالب في ثانوية شبام للبنين ابلغ من العمر 18 عام اهتممت بالحاسوب منذ رايته اول مره و شرعت في
+        تعلم الحاسوب و دخلت عالم البرمجة من بابة الواسع</p>
+      <img src="src/bot.svg" alt="">
     </div>
   </section>
-  
+
   <section class="skill-page container">
     <h2 class="sec-head">ماذا يمكنني ان افعل لك </h2>
     <div class="cardHolder">
-      
+
       <div class="card">
         <div class="cover"></div>
         <div class="content">
@@ -53,7 +56,7 @@
           </p>
         </div>
       </div>
-      
+
       <div class="card">
         <div class="cover"></div>
         <div class="content">
@@ -63,53 +66,29 @@
           <p>اقوم ببناء بوتات تيلجرام ك هواية الامر جميل و يستحق</p>
         </div>
       </div>
-      
+
     </div>
   </section>
-  
+
   <section class="pro-page container">
     <h2 class="sec-head">بعض من اعمالي السابقه </h2>
 
     <base target="_blank">
     <div class="nav">
       <div class="type-pro">
-        <div class="card active">الكل</div>
-        <div class="card">مواقع ويب</div>
-        <div class="card">بوتات تيلجرام</div>
+        <div class="card active" @click="type = 0">الكل</div>
+        <div class="card" @click="type = 2">مواقع ويب</div>
+        <div class="card" @click="type = 1">بوتات تيلجرام</div>
       </div>
     </div>
-    <div class="img-list ">
-      <div class="img-holder">
-        <a data-pro="bot" href="https://t.me/artea_bot">
+    <div class="img-list">
+      <div class="img-holder" v-for="li in showItem" data-type="bot">
+        <a :href="li.url">
           <div class="cover"></div>
           <div class="cover cover-p">
-            عبود للشاي و القهوه 
-
-          بوت للتسلية في المجموعات
+            {{li.text}}
           </div>
-          <img src="src/bot.jpg" alt="" srcset="">
-        </a>
-      </div>
-      <div class="img-holder">
-        <a data-pro="bot" href="https://superastorh.github.io/aliflang/">
-          <div class="cover"></div>
-          <div class="cover cover-p">
-          موقع لغة الف البرمجية 
-
-          محاولة عمل اعاد تصميم لموقع لغه الف البرمجية
-          </div>
-          <img src="src/alif.jpg" alt="" srcset="">
-        </a>
-      </div>
-      <div class="img-holder">
-        <a data-pro="bot" href="tm.me">
-          <div class="cover"></div>
-          <div class="cover cover-p">
-            عبود للشاي و القهوه 
-
-          بوت للتسلية في المجموعات
-          </div>
-          <img src="src/bot.jpg" alt="" srcset="">
+          <img :src="li.img" alt="" srcset="">
         </a>
       </div>
     </div>
@@ -152,7 +131,10 @@
     </div>
   </section>
 
+
   <section class="footer"></section>
+  <script src="./script/vue.js"></script>
+  <script src="./script/app.js"></script>
   <script src="./script/main.js"></script>
 
 </body>

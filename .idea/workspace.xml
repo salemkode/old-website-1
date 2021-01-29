@@ -20,12 +20,19 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="e9d77c8f-9571-48bc-bf03-7ca5a1b1d252" name="Default Changelist" comment="add images and skills secion">
+      <change afterPath="$PROJECT_DIR$/script/app.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/script/vue.js" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/css/normlize.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/normlize.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/css/style.css.map" beforeDir="false" afterPath="$PROJECT_DIR$/css/style.css.map" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/index.html" beforeDir="false" afterPath="$PROJECT_DIR$/index.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/script/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/script/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/Component/_containers.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/Component/_containers.scss" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/scss/Component/_progect.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/Component/_progect.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/viwe/_pro.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/viwe/_pro.scss" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/scss/viwe/_skill.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/viwe/_skill.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.css" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/style.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/style.scss" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/scss/viwe/_timeLine.scss" beforeDir="false" afterPath="$PROJECT_DIR$/scss/viwe/_timeLine.scss" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -34,6 +41,13 @@
   </component>
   <component name="ComposerSettings">
     <execution />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="JavaScript File" />
+      </list>
+    </option>
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
@@ -44,13 +58,32 @@
     <option name="showLibraryContents" value="true" />
   </component>
   <component name="PropertiesComponent">
+    <property name="ASKED_ADD_EXTERNAL_FILES" value="true" />
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="js.buildTools.grunt.grunt-cli.package" value="" />
+    <property name="js.buildTools.gulp.gulp_package_dir" value="" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
-    <property name="settings.editor.selected.configurable" value="xpath.settings" />
+    <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
     <property name="vue.rearranger.settings.migration" value="true" />
+  </component>
+  <component name="RunManager">
+    <configuration default="true" type="js.build_tools.grunt">
+      <node-interpreter value="project" />
+      <envs />
+      <method v="2" />
+    </configuration>
+    <configuration default="true" type="js.build_tools.gulp">
+      <node-interpreter>project</node-interpreter>
+      <node-options />
+      <gulpfile />
+      <tasks />
+      <arguments />
+      <envs />
+      <method v="2" />
+    </configuration>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -61,6 +94,8 @@
       <option name="presentableId" value="Default" />
       <updated>1611834024674</updated>
       <workItem from="1611834025784" duration="4217000" />
+      <workItem from="1611890583556" duration="4568000" />
+      <workItem from="1611897188513" duration="932000" />
     </task>
     <task id="LOCAL؜٠٠٠٠١" summary="add images and skills secion">
       <created>1611836110800</created>
@@ -84,6 +119,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="VcsManagerConfiguration">
     <MESSAGE value="add images and skills secion" />
@@ -94,10 +130,14 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="406" y="252" key="#Chrome_Settings/0.0.1360.728@0.0.1360.728" timestamp="1611834172949" />
-    <state x="38" y="153" width="1153" height="499" key="#Web_Browsers" timestamp="1611834258957">
+    <state x="38" y="153" width="1153" height="499" key="#Web_Browsers" timestamp="1611891037387">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="38" y="153" width="1153" height="499" key="#Web_Browsers/0.0.1360.728@0.0.1360.728" timestamp="1611834258957" />
+    <state x="38" y="153" width="1153" height="499" key="#Web_Browsers/0.0.1360.728@0.0.1360.728" timestamp="1611891037387" />
+    <state x="134" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1611891050922">
+      <screen x="0" y="0" width="1360" height="728" />
+    </state>
+    <state x="134" y="19" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1360.728@0.0.1360.728" timestamp="1611891050922" />
     <state x="427" y="219" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1611835986728">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
@@ -106,14 +146,14 @@
       <screen x="0" y="0" width="1360" height="728" />
     </state>
     <state x="349" y="50" width="662" height="678" key="EditFileWatcherDialog/0.0.1360.728@0.0.1360.728" timestamp="1611834851971" />
-    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1611835923757">
+    <state x="460" y="119" key="FileChooserDialogImpl" timestamp="1611896929968">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1611835923757" />
-    <state x="181" y="9" key="SettingsEditor" timestamp="1611836958939">
+    <state x="460" y="119" key="FileChooserDialogImpl/0.0.1360.728@0.0.1360.728" timestamp="1611896929968" />
+    <state x="182" y="18" key="SettingsEditor" timestamp="1611897048654">
       <screen x="0" y="0" width="1360" height="728" />
     </state>
-    <state x="181" y="9" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1611836958939" />
+    <state x="182" y="18" key="SettingsEditor/0.0.1360.728@0.0.1360.728" timestamp="1611897048654" />
     <state x="272" y="97" key="Vcs.Push.Dialog.v2" timestamp="1611836115194">
       <screen x="0" y="0" width="1360" height="728" />
     </state>

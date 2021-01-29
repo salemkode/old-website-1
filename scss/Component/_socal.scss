@@ -1,0 +1,31 @@
+.float-media {
+  position: fixed;
+  justify-content: left;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  border-radius: 15px 0 0 15px;
+  .media {
+    background-color: var(--sec-color);
+    width: 100% !important;
+    padding: 5px;
+    color: white;
+    font-size: 2em;
+    margin: 5px 0 5px auto;
+    border: solid var(--bs-dark);
+    border-width: 2px 0px 2px 2px;
+    > * {
+      padding: 10px;
+      margin: auto;
+    }
+    span {
+      width: 0;
+    }
+    &:hover {
+      span {
+        width: 100%;
+      }
+    }
+  }
+}

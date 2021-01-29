@@ -1,6 +1,6 @@
 @import "../cairoFont/cauro.css";
 :root {
-  --main-color: red;
+  --main-color: #ff0000;
 }
 
 body,

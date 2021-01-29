@@ -157,9 +157,7 @@ html {
   width: 100%;
   display: flex;
   flex-wrap: wrap;
-  background-color: var(--sec-color);
   border-radius: 10px;
-  padding: 15px;
 }
 .pro-page .img-list .img-holder {
   cursor: pointer;
@@ -170,9 +168,9 @@ html {
   display: flex;
   justify-content: center;
   align-items: center;
-  border: white solid 3px;
-  margin: 3px;
-  border-radius: 15px;
+  box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
+  margin: 5px;
+  border-radius: 20px;
 }
 .pro-page .img-list .img-holder .cover {
   display: none;
@@ -212,8 +210,9 @@ html {
   background-color: var(--main-color);
   position: absolute;
   left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
   margin: -1px;
-  top: 0;
 }
 .time-line .content .child-contener {
   position: relative;
@@ -262,6 +261,12 @@ section > h2 {
   margin-left: auto;
 }
 
+@media (max-width: 576px) {
+  .container {
+    margin: 0;
+    padding: 0;
+  }
+}
 @media (min-width: 576px) {
   .container {
     max-width: 540px;
@@ -295,6 +300,36 @@ section > h2 {
   margin: 5px;
   padding: 5px;
   text-align: center;
+}
+
+.float-media {
+  position: fixed;
+  justify-content: left;
+  right: 0;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1000;
+  border-radius: 15px 0 0 15px;
+}
+.float-media .media {
+  background-color: var(--sec-color);
+  width: 100% !important;
+  padding: 5px;
+  color: white;
+  font-size: 2em;
+  margin: 5px 0 5px auto;
+  border: solid var(--bs-dark);
+  border-width: 2px 0px 2px 2px;
+}
+.float-media .media > * {
+  padding: 10px;
+  margin: auto;
+}
+.float-media .media span {
+  width: 0;
+}
+.float-media .media:hover span {
+  width: 100%;
 }
 
 /*# sourceMappingURL=style.css.map */
