@@ -71,6 +71,7 @@ html {
 }
 .landing-page .header-area ul li {
   margin: 5px;
+  font-size: 2em;
 }
 .landing-page .header-area ul li a {
   cursor: pointer;
@@ -160,6 +161,9 @@ html {
   border-radius: 10px;
 }
 .pro-page .img-list .img-holder {
+  transition: 1s;
+  opacity: 0;
+  opacity: 1;
   cursor: pointer;
   position: relative;
   height: 200px;
@@ -249,6 +253,14 @@ html {
   float: right;
 }
 
+.footer {
+  padding: 10px;
+  background: var(--main-color);
+  color: white;
+  text-align: center;
+  font-size: 1.3em;
+}
+
 section > h2 {
   text-align: right;
 }
@@ -330,6 +342,43 @@ section > h2 {
 }
 .float-media .media:hover span {
   width: 100%;
+}
+
+@media (max-width: 860px) {
+  section h2 {
+    text-align: center;
+  }
+
+  .landing-page .header-area {
+    flex-direction: column;
+  }
+  .landing-page .header-area ul {
+    margin: auto;
+    padding: 10px;
+  }
+  .landing-page h1 {
+    width: 100vw;
+  }
+
+  .skill-page .cardHolder {
+    flex-direction: column;
+  }
+  .skill-page .cardHolder .card {
+    width: calc(100% - 22px);
+  }
+
+  .about-page .card {
+    flex-direction: column-reverse;
+  }
+
+  .pro-page .img-list {
+    justify-content: center;
+  }
+
+  .time-line .content .child-contener .right, .time-line .content .child-contener .left {
+    float: left;
+    width: calc(100% - 40px);
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

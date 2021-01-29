@@ -1,7 +1,7 @@
 let list = new Vue({
     el: '.pro-page',
     data: {
-        ul:[
+        ul: [
             {
                 img:
                     `src/bot.jpg`,
@@ -13,9 +13,9 @@ let list = new Vue({
                 type: 1
             },
             {
-                img:`src/alif.jpg`,
+                img: `src/alif.jpg`,
 
-                text:`موقع لغة الف البرمجية
+                text: `موقع لغة الف البرمجية
 
             محاولة عمل اعاد تصميم لموقع لغه الف البرمجية`,
 
@@ -31,24 +31,45 @@ let list = new Vue({
         * 2 = web
         * */
     },
-    method:{
-        isShow(t){
-            return this.Type === t || this.type === 0;
+    methods: {
+        clicked(e, int) {
+            let imgLi = document.querySelectorAll(".img-list > *");
+            imgLi.forEach(e => e.style.opacity = '0')
+            setTimeout(
+                () => {
+
+                    this.type = int;
+
+                    imgLi.forEach(e => {
+                        e.style.transition = "all 0s ease";
+                        e.style.opacity = '0';
+                        e.style.transition = "all 1s ease";
+                        e.style.opacity = '1'
+
+                    })
+
+
+                }, 1000
+            )
+            setTimeout(
+                () => {
+                }, 2000
+            )
+
         },
     },
-    computed:{
-        showItem(){
+    computed: {
+        showItem() {
             let myShow = []
             this.ul.forEach(
-                e=>{
-                    if( this.type === e.type || this.type === 0){
+                e => {
+                    if (this.type === e.type || this.type === 0) {
                         myShow.push(e);
                     }
                 }
             )
             return myShow;
         }
-
     }
 
 })

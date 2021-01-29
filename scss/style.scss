@@ -47,6 +47,9 @@ html {
 .time-line {
   @import "./viwe/timeLine";
 }
+.footer{
+  @import "./viwe/footer";
+}
 section {
   > h2 {
     text-align: right;
@@ -56,3 +59,6 @@ section {
 @import "./Component/card";
 @import "./Component/colums";
 @import "./Component/socal";
+
+
+@import "query/media";

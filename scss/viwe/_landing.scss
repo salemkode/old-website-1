@@ -8,11 +8,13 @@
   text-align: center;
   height: 100%;
 }
+
 .sec-head {
   font-weight: bold;
   text-align: right;
   margin-right: 10px;
 }
+
 .cover {
   position: absolute;
   height: 100%;
@@ -21,22 +23,30 @@
   opacity: 0.5;
   z-index: 1;
 }
+
 .header-area {
   z-index: 2;
   display: flex;
   position: relative;
+
   .logo {
     margin-left: 5px;
   }
+
   ul {
-    display: flex; list-style: none;
+    display: flex;
+    list-style: none;
     margin: auto 10px auto auto;
+
     li {
       margin: 5px;
+      font-size: 2em;
+
       a {
         cursor: pointer;
         color: white;
         text-decoration: none;
+
         &:hover {
           color: var(--main-color);
         }
@@ -44,6 +54,7 @@
     }
   }
 }
+
 .body-area {
   position: absolute;
   left: 50%;

@@ -1,0 +1,43 @@
+@media (max-width: 860px) {
+  section{
+    h2{
+      text-align: center;
+    }
+  }
+  .landing-page{
+    .header-area {
+      flex-direction: column;
+      ul{
+        margin: auto;
+        padding: 10px;
+      }
+    }
+    h1{
+      width: 100vw;
+    }
+  }
+  .skill-page .cardHolder{
+    .card{
+    width: calc(100% - 22px);
+    }
+    flex-direction: column;
+  }
+  .about-page{
+    .card{
+      flex-direction: column-reverse;
+    }
+  }
+  .pro-page{
+    .img-list{
+      justify-content: center;
+    }
+  }
+  .time-line{
+    .content .child-contener {
+      .right , .left {
+        float: left;
+        width: calc(100% - 40px);
+      }
+    }
+  }
+}

@@ -5,6 +5,9 @@
   flex-wrap: wrap;
   border-radius: 10px;
   .img-holder {
+    transition: 1s;
+    opacity: 0;
+    opacity: 1;
     cursor: pointer;
     position: relative;
     height: 200px;
