@@ -1,4 +1,7 @@
-@import "../cairoFont/cauro.css";
+@import "../Font/cauro.css";
+:root {
+  /* color*/
+}
 :root {
   --main-color: #fd7e14;
   --sec-color: #0d6efd;
@@ -28,7 +31,7 @@
 
 body,
 html {
-  font-family: "Cairo", sans-serif;
+  font-family: "Tajawal", sans-serif;
   width: 100%;
   height: 100%;
   overflow-x: hidden;
@@ -120,21 +123,23 @@ html {
 .landing-page .header-area .logo {
   margin-left: 5px;
 }
-.landing-page .header-area ul {
+.landing-page .mySocial {
   display: flex;
   list-style: none;
-  margin: auto 10px auto auto;
+  margin: auto;
+  padding: 10px;
+  justify-content: center;
 }
-.landing-page .header-area ul li {
+.landing-page .mySocial li {
   margin: 5px;
   font-size: 2em;
 }
-.landing-page .header-area ul li a {
+.landing-page .mySocial li a {
   cursor: pointer;
-  color: white;
+  color: black;
   text-decoration: none;
 }
-.landing-page .header-area ul li a:hover {
+.landing-page .mySocial li a:hover {
   color: var(--main-color);
 }
 .landing-page .body-area {
@@ -164,33 +169,38 @@ html {
 
 .skill-page .cardHolder {
   display: flex;
-  line-height: 1.5;
-  font-size: 1.2em;
+  flex-wrap: wrap;
+  justify-content: center;
 }
-.skill-page .cardHolder .card {
-  border: solid 0.1px gray;
-  position: relative;
-  color: white;
-  width: 100%;
-  background: url("../src/web.jpg") center;
-  background-size: cover;
+.skill-page .card {
+  text-align: center;
+  width: 250px;
+  height: 350px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  background: var(--bs-light);
+  color: black;
+  transition: 0.6s;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.3);
 }
-.skill-page .cardHolder .card:last-child {
-  background: url("../src/bot2.jpg") center;
+.skill-page .card:hover {
+  box-shadow: 0 0 60px rgba(0, 0, 0, 0.5);
 }
-.skill-page .cardHolder .card .cover {
-  background-color: black;
-  opacity: 0.8;
-  position: absolute;
-  height: 100%;
-  width: 100%;
-  border-radius: 4px;
-  top: 0;
-  right: 0;
+.skill-page .card img {
+  transform: translateY(15px);
+  width: 200px;
+  height: 120px;
 }
-.skill-page .cardHolder .card .content {
-  position: relative;
-  z-index: 2;
+.skill-page .card h3 {
+  font-size: 25px;
+  transform: translatey(10px);
+}
+.skill-page .card p {
+  text-align: center;
+  width: 220px;
+  margin: auto;
+  font-size: large;
+  font-weight: bold;
 }
 
 .pro-page {
@@ -218,8 +228,6 @@ html {
   border-radius: 10px;
 }
 .pro-page .img-list .img-holder {
-  transition: 1s;
-  opacity: 1;
   cursor: pointer;
   position: relative;
   width: 300px;
@@ -257,6 +265,8 @@ html {
   color: black;
   margin: 0;
   width: auto;
+  font-weight: bold;
+  font-size: 20px;
   text-align: center;
   padding: 10px 20px;
 }
@@ -289,7 +299,7 @@ html {
   margin-left: 10px;
   margin-right: 10px;
   font-weight: bold;
-  font-size: 1.25em;
+  font-size: 1.3em;
 }
 .time-line .content .child-contener .year {
   text-align: center;
@@ -301,7 +311,7 @@ html {
   border-radius: 4px;
   color: white;
   padding: 2px;
-  font-weight: bold;
+  font-family: "CairoB", sans-serif;
 }
 .time-line .content .child-contener .left,
 .time-line .content .child-contener .right {
@@ -420,19 +430,8 @@ section > h2 {
   .landing-page .header-area {
     flex-direction: column;
   }
-  .landing-page .header-area ul {
-    margin: auto;
-    padding: 10px;
-  }
   .landing-page h1 {
     width: 100vw;
-  }
-
-  .skill-page .cardHolder {
-    flex-direction: column;
-  }
-  .skill-page .cardHolder .card {
-    width: calc(100% - 22px);
   }
 
   .about-page .card {

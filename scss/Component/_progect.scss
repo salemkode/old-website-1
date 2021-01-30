@@ -6,8 +6,6 @@
   border-radius: 10px;
 
   .img-holder {
-    transition: 1s;
-    opacity: 1;
     cursor: pointer;
     position: relative;
     width: 300px;
@@ -52,6 +50,8 @@
       color: black;
       margin: 0;
       width: auto;
+      font-weight: bold;
+      font-size: 20px;
       text-align: center;
       padding: 10px 20px;
     }
