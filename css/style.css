@@ -31,8 +31,64 @@ html {
   font-family: "Cairo", sans-serif;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
 
+.loader {
+  color: #fff;
+  position: fixed;
+  box-sizing: border-box;
+  left: -9999px;
+  top: -9999px;
+  width: 0;
+  height: 0;
+  overflow: hidden;
+  z-index: 999999;
+}
+.loader:after, .loader:before {
+  box-sizing: border-box;
+  display: none;
+}
+.loader.is-active {
+  background-color: rgba(0, 0, 0, 0.85);
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+}
+.loader.is-active:after, .loader.is-active:before {
+  display: block;
+}
+
+.loader-page:before, .loader-page:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  top: calc(50% - 10px);
+  left: calc(50% - 10px);
+  border-radius: 50%;
+  background-color: #fff;
+  animation: kick 0.6s infinite alternate;
+}
+.loader-page:after {
+  margin-left: -30px;
+  animation: kick 0.6s infinite alternate;
+}
+.loader-page:before {
+  animation-delay: 0.2s;
+}
+
+@keyframes kick {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0.3;
+    transform: translateY(-1rem);
+  }
+}
 .landing-page {
   width: 100%;
   height: 100%;
@@ -100,9 +156,10 @@ html {
 }
 .about-page .card p {
   margin: auto;
-  padding: 0 5px;
+  padding: 10px;
   color: white;
-  font-size: larger;
+  font-size: 25px;
+  line-height: 1.4;
 }
 
 .skill-page .cardHolder {
@@ -162,11 +219,9 @@ html {
 }
 .pro-page .img-list .img-holder {
   transition: 1s;
-  opacity: 0;
   opacity: 1;
   cursor: pointer;
   position: relative;
-  height: 200px;
   width: 300px;
   overflow: hidden;
   display: flex;
@@ -195,8 +250,15 @@ html {
   background-color: transparent;
   opacity: 1;
 }
-.pro-page .img-list .img-holder img {
+.pro-page .img-list .img-holder .holder img {
   height: 210px;
+}
+.pro-page .img-list .img-holder p {
+  color: black;
+  margin: 0;
+  width: auto;
+  text-align: center;
+  padding: 10px 20px;
 }
 .pro-page .img-list .img-holder:hover .cover {
   display: flex;
@@ -222,6 +284,12 @@ html {
   position: relative;
   overflow: hidden;
   margin-top: -2px;
+}
+.time-line .content .child-contener p {
+  margin-left: 10px;
+  margin-right: 10px;
+  font-weight: bold;
+  font-size: 1.25em;
 }
 .time-line .content .child-contener .year {
   text-align: center;

@@ -31,7 +31,9 @@ html {
   font-family: "Cairo", sans-serif;
   width: 100%;
   height: 100%;
+  overflow-x: hidden;
 }
+@import "viwe/loader/loader-bouncing";
 .landing-page {
   @import "./viwe/landing";
 }

@@ -3,6 +3,7 @@ let list = new Vue({
     data: {
         ul: [
             {
+
                 img:
                     `src/bot.jpg`,
                 text:
@@ -10,9 +11,11 @@ let list = new Vue({
 
                     بوت للتسلية في المجموعات`,
                 url: "https://t.me/artea_bot",
-                type: 1
+                type: 1,
+                title:"بوت للقهوة"
             },
             {
+
                 img: `src/alif.jpg`,
 
                 text: `موقع لغة الف البرمجية
@@ -20,7 +23,9 @@ let list = new Vue({
             محاولة عمل اعاد تصميم لموقع لغه الف البرمجية`,
 
                 url: "https://superastorh.github.io/aliflang/",
-                type: 2
+                type: 2,
+                title:"موقع للغة الف"
+
             },
 
         ],

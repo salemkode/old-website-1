@@ -4,22 +4,21 @@
   display: flex;
   flex-wrap: wrap;
   border-radius: 10px;
+
   .img-holder {
     transition: 1s;
-    opacity: 0;
     opacity: 1;
     cursor: pointer;
     position: relative;
-    height: 200px;
     width: 300px;
     overflow: hidden;
     display: flex;
     justify-content: center;
     align-items: center;
-    box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+    box-shadow: 0 8px 16px 0 rgba(0, 0, 0, 0.2);
     margin: 5px;
     border-radius: 20px;
-    
+
     .cover {
       display: none;
       color: white;
@@ -35,15 +34,30 @@
       align-items: center;
       text-align: center;
     }
-    .cover-p{
+
+    .cover-p {
       background-color: transparent;
       opacity: 1;
     }
-    img {
-      height: 210px;
+
+    .holder {
+
+      img {
+        height: 210px;
+      }
+
     }
+
+    p {
+      color: black;
+      margin: 0;
+      width: auto;
+      text-align: center;
+      padding: 10px 20px;
+    }
+
     &:hover {
-      .cover{
+      .cover {
         display: flex;
       }
     }

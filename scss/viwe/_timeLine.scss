@@ -20,6 +20,13 @@
     position: relative;
     overflow: hidden;
     margin-top: -2px;
+    p{
+      margin-left: 10px;
+      margin-right: 10px;
+      font-weight: bold;
+      font-size: 1.25em;
+    }
+
     .year {
       text-align: center;
       position: relative;
@@ -32,6 +39,7 @@
       padding: 2px;
       font-weight: bold;
     }
+
     .left,
     .right {
       width: calc(50% - 40px);
@@ -43,9 +51,11 @@
       margin: 15px;
       padding: 5px;
     }
+
     .left {
       float: left;
     }
+
     .right {
       float: right;
     }
