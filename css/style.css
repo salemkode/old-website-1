@@ -121,14 +121,13 @@ html {
   position: relative;
 }
 .landing-page .header-area .logo {
-  margin-left: 5px;
+  margin-left: 15px;
 }
 .landing-page .mySocial {
   display: flex;
   list-style: none;
-  margin: auto;
+  margin: auto 0 auto auto;
   padding: 10px;
-  justify-content: center;
 }
 .landing-page .mySocial li {
   margin: 5px;
@@ -136,7 +135,7 @@ html {
 }
 .landing-page .mySocial li a {
   cursor: pointer;
-  color: black;
+  color: white;
   text-decoration: none;
 }
 .landing-page .mySocial li a:hover {
@@ -448,6 +447,7 @@ section > h2 {
   }
   .landing-page h1 {
     width: 100vw;
+    margin: 0;
   }
 
   .about-page .myCard {

@@ -30,7 +30,7 @@
   position: relative;
 
   .logo {
-    margin-left: 5px;
+    margin-left: 15px;
   }
 
 }
@@ -38,17 +38,15 @@
 .mySocial {
   display: flex;
   list-style: none;
-  margin: auto;
+  margin: auto 0 auto auto;
   padding: 10px;
-  justify-content: center;
-
   li {
     margin: 5px;
     font-size: 2em;
 
     a {
       cursor: pointer;
-      color: black;
+      color: white;
       text-decoration: none;
 
       &:hover {
