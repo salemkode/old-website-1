@@ -1,32 +1,45 @@
 @media (max-width: 860px) {
-  section{
-    h2{
+  section {
+    h2 {
       text-align: center;
     }
   }
-  .landing-page{
+  .landing-page {
     .header-area {
       flex-direction: column;
     }
 
-    h1{
+    h1 {
       width: 100vw;
     }
   }
 
-  .about-page{
-    .card{
+  .about-page {
+    .myCard {
       flex-direction: column-reverse;
+
+      .p-holder {
+        padding: 19px 0 0;
+      }
+
+      p {
+        &:before {
+          top: 0;
+          right: 50%;
+          transform: translateX(50%);
+          border-color: transparent transparent var(--sec-color);
+        }
+      }
     }
   }
-  .pro-page{
-    .img-list{
+  .pro-page {
+    .img-list {
       justify-content: center;
     }
   }
-  .time-line{
+  .time-line {
     .content .child-contener {
-      .right , .left {
+      .right, .left {
         float: left;
         width: calc(100% - 40px);
       }

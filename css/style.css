@@ -151,20 +151,36 @@ html {
   z-index: 2;
 }
 
-.about-page .card {
+.about-page .myCard {
   display: flex;
-  background-color: var(--sec-color);
+  padding: 5px;
 }
-.about-page .card img {
+.about-page .myCard img {
   height: 150px;
   border-radius: 50%;
 }
-.about-page .card p {
+.about-page .myCard .p-holder {
+  position: relative;
+  margin: auto;
+  padding-right: 19px;
+}
+.about-page .myCard p {
+  background-color: var(--sec-color);
   margin: auto;
   padding: 10px;
   color: white;
   font-size: 25px;
   line-height: 1.4;
+}
+.about-page .myCard p:before {
+  content: "";
+  border: solid 10px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  transform: translateY(-50%);
+  border-color: transparent transparent transparent var(--sec-color);
 }
 
 .skill-page .cardHolder {
@@ -434,8 +450,17 @@ section > h2 {
     width: 100vw;
   }
 
-  .about-page .card {
+  .about-page .myCard {
     flex-direction: column-reverse;
+  }
+  .about-page .myCard .p-holder {
+    padding: 19px 0 0;
+  }
+  .about-page .myCard p:before {
+    top: 0;
+    right: 50%;
+    transform: translateX(50%);
+    border-color: transparent transparent var(--sec-color);
   }
 
   .pro-page .img-list {
