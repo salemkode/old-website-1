@@ -78,13 +78,10 @@ function listFilter() {
     Array.from(pros).forEach(
         e => {
             let dataType = e.getAttribute("data-type");
-            console.log(type);
-            console.log(dataType);
-            console.log(typeof type, typeof dataType);
             if (type == dataType || type === 0) {
                 $(e).fadeIn("slow");
             } else {
-                setTimeout(e=> $(e).fadeOut("slow") , 700);
+                $(e).fadeOut("slow");
             }
         }
     )
