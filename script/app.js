@@ -37,7 +37,7 @@ let imgList = $(".pro-page .img-list");
 let type = 0;
 
 tap.click(
-    function (e) {
+    function () {
         tap.removeClass("active");
         this.classList.add('active');
         type = Number.parseInt(this.getAttribute("data-type"));
@@ -71,18 +71,13 @@ function makeHolder(id, title, text, img, type, url) {
 }
 
 function listFilter() {
-
-    Array.from(pros).forEach(
-        e => {
-            let dataType = e.getAttribute("data-type");
-            if (type == dataType || type === 0) {
-                $(e).fadeIn("slow");
-            } else {
-                $(e).fadeOut("slow");
-            }
-        }
-    )
-
+    if (type == 0) {
+        pros.fadeIn()
+    } else {
+        pros.filter('[data-type!="' + type + '"]').fadeOut(400 , () => {
+            pros.filter('[data-type="' + type + '"]').fadeIn();
+        });
+    }
 }
 
 /*end page product */
