@@ -60,14 +60,11 @@ function makeHolder(id, title, text, img, type, url) {
     return `
     <div class="img-holder" id="img-holder-${id}" data-type="${type}">
             <a href="${url}">
-                <div class="cover"></div>
-                <div class="cover cover-p">
-                    ${text}
-                </div>
                 <div class="holder">
                     <img src="${img}" alt="" srcset="">
                 </div>
-                <p>${title}</p>
+                <h2>${title}</h2>
+                <p>${text}</p>
             </a>
      </div>
     `;

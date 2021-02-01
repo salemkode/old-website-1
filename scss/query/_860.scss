@@ -4,6 +4,7 @@
       text-align: center;
     }
   }
+
   .landing-page {
     .header-area {
       flex-direction: column;
@@ -13,7 +14,13 @@
       width: 100vw;
       margin: 0;
     }
+
+    .mySocial {
+      margin: auto;
+    }
+
   }
+
 
   .about-page {
     .myCard {
@@ -33,11 +40,13 @@
       }
     }
   }
+
   .pro-page {
     .img-list {
       justify-content: center;
     }
   }
+
   .time-line {
     .content .child-contener {
       .right, .left {

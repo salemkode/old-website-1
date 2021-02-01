@@ -1,1 +1,1 @@
-window.onload = e => document.querySelector(".loader-page").style.display = "none";
+window.onload = e => $(".loader-page").fadeOut("slow");

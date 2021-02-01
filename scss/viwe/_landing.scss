@@ -6,7 +6,6 @@
   color: white;
   position: relative;
   text-align: center;
-  height: 100%;
 }
 
 .sec-head {
@@ -40,6 +39,7 @@
   list-style: none;
   margin: auto 0 auto auto;
   padding: 10px;
+
   li {
     margin: 5px;
     font-size: 2em;
@@ -48,9 +48,11 @@
       cursor: pointer;
       color: white;
       text-decoration: none;
+      @media (hover: hover) and (pointer: fine) {
 
-      &:hover {
-        color: var(--main-color);
+        &:hover {
+          color: var(--main-color);
+        }
       }
     }
   }
