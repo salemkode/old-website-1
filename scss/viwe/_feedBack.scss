@@ -1,0 +1,36 @@
+& {
+  background: var(--bs-dark);
+}
+.container {
+  display: flex;
+
+  > div {
+    width: 100%;
+  }
+  @import "../Component/contact";
+  .left {
+    h1 {
+      color: white;
+    }
+    text-align: center;
+    .holder {
+      width: 100%;
+      .card {
+        display: flex;
+        padding: 0;
+        margin: 10px;
+        height: 100px;
+        cursor: pointer;
+        overflow: hidden;
+      }
+      img {
+        height: 100%;
+        margin: 0;
+      }
+      h3 {
+        margin: auto;
+        color: black;
+      }
+    }
+  }
+}

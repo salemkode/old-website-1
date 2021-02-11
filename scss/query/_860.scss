@@ -6,6 +6,7 @@
   }
 
   .landing-page {
+    background-position: left;
     .header-area {
       flex-direction: column;
     }
@@ -18,9 +19,7 @@
     .mySocial {
       margin: auto;
     }
-
   }
-
 
   .about-page {
     .myCard {
@@ -49,10 +48,17 @@
 
   .time-line {
     .content .child-contener {
-      .right, .left {
+      .right,
+      .left {
         float: left;
         width: calc(100% - 40px);
       }
+    }
+  }
+  .feedBack-page {
+    .container {
+      flex-direction: column;
+      width: 100%;
     }
   }
 }

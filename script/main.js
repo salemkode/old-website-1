@@ -1,1 +1,4 @@
-window.onload = e => $(".loader-page").fadeOut("slow");
+window.onload = (e) => {
+  $(".loader-page").fadeOut("slow");
+};
+

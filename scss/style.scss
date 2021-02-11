@@ -1,6 +1,6 @@
 :root {
   /* color*/
-  &{
+  & {
     --main-color: #fd7e14;
     --sec-color: #0d6efd;
     /*boot strap color*/
@@ -36,7 +36,13 @@ html {
   height: 100%;
   overflow-x: hidden;
 }
+section {
+  > h2 {
+    text-align: right;
+  }
+}
 @import "viwe/loader/loader-bouncing";
+
 .landing-page {
   @import "./viwe/landing";
 }
@@ -49,20 +55,16 @@ html {
 .pro-page {
   @import "./viwe/pro";
 }
-.time-line {
-  @import "./viwe/timeLine";
+.feedBack-page{
+  @import "./viwe/feedBack";
 }
-.footer{
+.footer {
   @import "./viwe/footer";
 }
-section {
-  > h2 {
-    text-align: right;
-  }
-}
+
+
 @import "./Component/containers";
 @import "./Component/card";
 @import "./Component/socal";
-
 
 @import "query/media";
