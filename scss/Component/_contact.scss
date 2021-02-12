@@ -88,15 +88,8 @@
     transform: translate(-50%, -50%);
     color: #fff;
   }
-  div.github {
+  div.github ,div.twitter ,div.telegram{ 
     background: #34363a;
-  }
-
-  div.twitter {
-    background: #41caf6;
-  }
-
-  div.telegram {
-    background: #32afed;
+    padding: 2px;
   }
 }
