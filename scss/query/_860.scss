@@ -59,6 +59,9 @@
     .container {
       flex-direction: column;
       width: 100%;
+      .contact-us {
+        width: 70%;
+      }
     }
   }
 }

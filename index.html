@@ -111,26 +111,27 @@
             </div>
 
             <div class="right">
-                <div class="contact-us">
+                <form class="contact-us">
                     <div class="title">
                         <h1>تواصل معي</h1>
                     </div>
                     <div class="form">
                         <div class="form-items">
-                            <input type="text" class="input" placeholder="الاسم" />
+                            <input type="text" class="input" id="value1_input" placeholder="الاسم" />
                             <i class="fas fa-user"></i>
                         </div>
                         <div class="form-items">
-                            <input type="text" class="input" placeholder="الايميل" />
+                            <input type="text" class="input" id="value2_input" placeholder="الايميل" />
                             <i class="fas fa-envelope"></i>
                         </div>
                         <div class="form-items">
-                            <textarea class="input message" cols="30" rows="10" placeholder=".....الرسالة"
+                            <textarea class="input message" id="value3_input" cols="30" rows="10"
+                                placeholder=".....الرسالة"
                                 style="resize: vertical; min-height: 100px; max-height: 300px"></textarea>
                         </div>
                     </div>
 
-                    <div class="btn">
+                    <div class="btn" id="send_btn">
                         ارسال
                         <i class="fas fa-arrow-right"></i>
                     </div>
@@ -153,7 +154,7 @@
                             </div>
                         </a>
                     </div>
-                </div>
+                </form>
             </div>
         </div>
 
@@ -186,6 +187,33 @@
     <script src="./script/jquery-3.5.1.min.js"></script>
     <script src="./script/app.js"></script>
     <script src="./script/main.js"></script>
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2/dist/email.min.js"></script>
+    <script type="text/javascript">
+        (function () {
+            emailjs.init("user_H5hj5Y9oJGUhfz2IEQqeE");
+        })();
+
+
+
+        $("#send_btn").on("click", function () {
+            var templateParams = {
+                name: $("#value1_input")[0].value,
+                email: $("#value2_input")[0].value,
+                text: $("#value3_input")[0].value
+            };
+            emailjs.send('service_qru3nk9', 'template_lixcngu', templateParams)
+                .then(function (response) {
+                    alert("تم الارسال بنجاح");
+                    $("input , textarea").val("");
+                    console.log('SUCCESS!', response.status, response.text);
+                }, function (error) {
+                    alert("حصل خطاء")
+                    console.log('FAILED...', error);
+                });
+
+        })
+
+    </script>
 
 </body>
 
